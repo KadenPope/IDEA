@@ -75,6 +75,7 @@ body .navbar {
   top: 0;
   left: 0;
   width: 100%;
+  height: 60px;
 }
 
 @media only screen and (min-width: 760px) {
@@ -89,10 +90,12 @@ body .navbar {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 85px;
   }
 }
 
 body .navbar div {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,11 +108,8 @@ body .navbar div {
           justify-content: space-between;
 }
 
-body .navbar div .logo {
-  display: block;
-}
-
 body .navbar div .logo img {
+  display: block;
   width: 60px;
 }
 
@@ -122,6 +122,7 @@ body .navbar div .logo img {
 body .navbar div #menu-button {
   background-color: transparent;
   border: none;
+  color: white;
 }
 
 @media only screen and (min-width: 760px) {
@@ -190,8 +191,32 @@ header {
   margin-top: 90px;
 }
 
-body {
-  background-color: #592140;
-  font-size: 25px;
+footer {
+  width: 100%;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  background-color: #2A708C;
+  color: white;
+}
+
+@media only screen and (min-width: 760px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
