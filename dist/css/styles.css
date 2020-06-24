@@ -69,7 +69,51 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+header .hero-image {
+  background-image: url(/images/homeBanner.jpg);
+  position: relative;
+  left: 0px;
+  height: 80vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+header .hero-text {
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 760px) {
+  header .hero-text {
+    font-size: 3rem;
+  }
+}
+
+header .hero-text h1 {
+  color: white;
+  position: relative;
+  padding: 10px;
+  background-color: rgba(114, 53, 98, 0.85);
+}
+
 body .navbar {
+  z-index: 100;
   background-color: #2A708C;
   position: fixed;
   top: 0;
@@ -120,6 +164,7 @@ body .navbar div .logo img {
 }
 
 body .navbar div #menu-button {
+  font-size: 14px;
   background-color: transparent;
   border: none;
   color: white;
@@ -139,6 +184,7 @@ body .navbar .nav-show {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #2A708C;
 }
 
 .nav-list {
@@ -162,8 +208,8 @@ body .navbar .nav-show {
 }
 
 .nav-list a:hover {
-  background-color: #50AABF;
-  color: black;
+  border-bottom: 5px solid #50AABF;
+  color: white;
 }
 
 @media only screen and (min-width: 760px) {
@@ -191,9 +237,14 @@ header {
   margin-top: 90px;
 }
 
+body .wrapper {
+  max-width: 1200px;
+  margin: 0 auto 90px auto;
+}
+
 footer {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,5 +269,99 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.home main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.home main .descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 760px) {
+  .home main .descriptions {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.home main .descriptions h2 {
+  font-size: 1.5rem;
+  padding: .5rem;
+  background-color: rgba(114, 53, 98, 0.3);
+}
+
+.home main .descriptions p {
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+.home main .descriptions section {
+  border-left: 5px solid #723562;
+  margin: 30px 0;
+}
+
+@media only screen and (min-width: 760px) {
+  .home main .descriptions section {
+    max-width: 45%;
+  }
+}
+
+.home main .links {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media only screen and (min-width: 550px) {
+  .home main .links {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .home main .links {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.home main .links div {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(89, 33, 64, 0.9);
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+.home main .links div:hover {
+  background-color: rgba(114, 53, 98, 0.7);
+}
+
+.home main .links div a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 200px;
 }
 /*# sourceMappingURL=styles.css.map */

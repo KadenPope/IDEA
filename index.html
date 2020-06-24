@@ -8,44 +8,78 @@
 </head>
 
 
-<body>
+<body class="home">
+
+    <nav class="navbar">
+        <div>
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="BCIT Logo">
+            </a>
+            <button id = "menu-button">
+                MENU
+            </button>
+        </div>
+
+        <ul class = "nav-list">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+                <a href="lesson.html">Lessons</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
     <header> 
-        <nav class="navbar">
-            <div>
-                <a class="logo" href="index.html">
-                    <img src="images/logo.png" alt="BCIT Logo">
-                </a>
-                <button id = "menu-button">
-                    MENU
-                </button>
-            </div>
+        <div class="hero-image">
 
-            <ul class = "nav-list">
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="schedule.html">Schedule</a>
-                </li>
-                <li>
-                    <a href="lesson.html">Lessons</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
+        </div>
+        <div class="hero-text">
+            <h1>Welcome to COMP 1950</h1>  
+        </div>
     </header>   
 
-    <div>
+    <main class="wrapper">
 
-        <main>
+        <div class="descriptions">
+            <section class = 'what-is-1950'>
+                <h2>What is COMP 1950?</h2>
+                <p>
+                    Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques. Participants will gain a deeper understanding of the latest technologies including HTML5 and CSS3 for developing web sites and applications. 
+                </p>
+            </section>
 
-        </main>
+            <section class = 'who-is-1950-for'>
+                <h2>
+                    Who is COMP 1950 for?
+                </h2>
+                <p>
+                    COMP 1950 is for students who already have a basic understanding of HTML/CSS and want to develop their skills as web developers.  This will act as a bridge between HTML/CSS and more advanced programming skills, such as PHP and JavaScript.
+                </p>
+            </section>
+        </div> <!--CLOSE DESCRIPTIONS DIV-->
+        <div class="links">
+            <div>
+                <a href="about.html">About</a>
+            </div>
+            <div>
+                <a href="schedule.html">Schedule</a> 
+            </div>
+            <div>
+                <a href="lesson.html">Lessons</a>
+            </div>
+            <div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div> <!--CLOSE LINKS DIV-->
 
-    </div>
-
+    </main>
 
 
     <footer> 

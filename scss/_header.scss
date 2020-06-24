@@ -1,0 +1,31 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    .hero-image {
+        background-image: url(/images/homeBanner.jpg);
+        position: relative;
+        left: 0px;
+        height: 80vh;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+    }
+    .hero-text {
+        position: absolute;
+        font-size: 1.5rem;
+
+        @media only screen and (min-width: 760px) {
+            font-size: 3rem;
+        }
+
+        h1 {
+            color: $light-text;
+            position: relative;
+            padding: 10px;
+            background-color: rgba($secondary-color-hover, .85);
+        }
+    }
+}
