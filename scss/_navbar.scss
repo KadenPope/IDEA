@@ -1,7 +1,7 @@
 body {
     .navbar {
         z-index: 100;
-        background-color: $main-color;
+        background-color: $secondary-color;
         position: fixed;
         top: 0;
         left: 0;
@@ -71,8 +71,8 @@ body {
         color: $light-text;
 
         &:hover {
-            background-color: $main-color-hover;
-            color: $dark-text;
+            background-color: $secondary-color-hover;
+            color: $light-text;
         }
     }
     
