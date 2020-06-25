@@ -14,11 +14,12 @@
 
 
 // PAGE COMPONENTS
+@import 'body';
 @import 'header';
 @import 'navbar';
-@import 'body';
 @import 'wrapper';
 @import 'footer';
 
 // INDIVIDUAL PAGES 
 @import 'home';
+@import 'about';

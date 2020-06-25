@@ -69,6 +69,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body .wrapper {
+  max-width: 1200px;
+  margin: 0 auto 90px auto;
+}
+
+body h2 {
+  font-size: 1.5rem;
+  background-color: rgba(114, 53, 98, 0.3);
+  padding: 8px;
+  color: black;
+}
+
 header {
   position: relative;
   display: -webkit-box;
@@ -110,6 +122,12 @@ header .hero-text h1 {
   position: relative;
   padding: 10px;
   background-color: rgba(114, 53, 98, 0.85);
+}
+
+@media only screen and (min-width: 500px) {
+  header .hero-text h1 {
+    font-size: 2.5rem;
+  }
 }
 
 body .navbar {
@@ -208,8 +226,8 @@ body .navbar .nav-show {
 }
 
 .nav-list a:hover {
-  border-bottom: 5px solid #50AABF;
-  color: white;
+  background-color: #50AABF;
+  color: black;
 }
 
 @media only screen and (min-width: 760px) {
@@ -235,11 +253,6 @@ body .navbar .nav-show {
 
 header {
   margin-top: 90px;
-}
-
-body .wrapper {
-  max-width: 1200px;
-  margin: 0 auto 90px auto;
 }
 
 footer {
@@ -304,15 +317,9 @@ footer {
   }
 }
 
-.home main .descriptions h2 {
-  font-size: 1.5rem;
-  padding: .5rem;
-  background-color: rgba(114, 53, 98, 0.3);
-}
-
 .home main .descriptions p {
   font-size: 1rem;
-  padding-left: 5px;
+  padding: 5px 5px 5px 10px;
 }
 
 .home main .descriptions section {
@@ -363,5 +370,80 @@ footer {
   text-align: center;
   font-size: 2rem;
   line-height: 200px;
+}
+
+.about header h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px 0;
+  color: white;
+  background-color: rgba(114, 53, 98, 0.85);
+}
+
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .wrapper div {
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+.about .wrapper div .box {
+  width: 100%;
+}
+
+.about .wrapper .box {
+  border: 3px solid #2A708C;
+}
+
+.about .wrapper .inner-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 760px) {
+  .about .wrapper .inner-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about .wrapper .inner-flex div:first-child {
+    margin-right: 15px;
+  }
+  .about .wrapper .inner-flex div:last-child {
+    margin-left: 15px;
+  }
+}
+
+.about .wrapper .intro {
+  border: 1px solid #592140;
+  border-left: 5px solid #592140;
+  margin: 20px auto;
+}
+
+.about .wrapper .intro blockquote {
+  margin: 10px;
+  font-size: .9rem;
+  padding: .5rem;
+}
+
+.about .wrapper h2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,59 @@
+.about {
+    header {
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            padding: 15px 0;
+            color: $light-text;
+            background-color: rgba($secondary-color-hover, .85);
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            width: 80%;
+            margin: 0 auto 20px auto;
+            .box {
+                width: 100%;
+            }
+        }
+
+        .box {
+            border: 3px solid $main-color;
+        }
+
+        .inner-flex {
+            display: flex;
+            flex-direction: column;
+
+            @media only screen and (min-width: 760px) {
+                flex-direction: row;
+                div:first-child {
+                    margin-right: 15px;
+                }
+                div:last-child {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .intro {
+            border: 1px solid $secondary-color;
+            border-left: 5px solid $secondary-color;
+            margin: 20px auto;
+    
+            blockquote {
+                margin: 10px;
+                font-size: .9rem;
+                padding: .5rem;
+            }
+        }
+        h2 {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}

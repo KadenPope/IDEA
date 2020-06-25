@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> COMP 1950 | About </title>
+    <title> COMP 1950 | Home </title>
+    <link rel="stylesheet" href="dist/css/styles.css">
 </head>
-<body>
-    
+
+
+<body class="about">
+
+    <nav class="navbar">
+        <div>
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="BCIT Logo">
+            </a>
+            <button id = "menu-button">
+                MENU
+            </button>
+        </div>
+
+        <ul class = "nav-list">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+                <a href="lesson.html">Lessons</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header> 
+        <h1>
+            About COMP 1950
+        </h1>
+    </header>   
+
+    <main class="wrapper">
+        
+        <div class="intro">
+            <blockquote>COMP 1950 follows on from COMP 1850.  Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques.  Participants will gain a deeper understanding of the latest technologies including HTML 5 and CSS3 for developing websites and applications.  There is a focus on responsive web design and mobile presentation through the use of Media Queries.</blockquote>
+        </div>
+        <div class="inner-flex">
+            <div class="pre-reqs box">
+                <h2>Pre-Requisites</h2>
+            </div>
+            <div class="start-dates box">
+                <h2>Upcoming Start Dates</h2>
+            </div>
+        </div>
+
+        <div class="goals box">
+            <h2>Course Goals</h2>
+        </div>
+        <div class="learning-outcomes box">
+            <h2>Learning Outcomes</h2>
+        </div>
+        <div class="inner-flex">
+            <div class="evaluation-criteria box">
+                <h2>Evaluation Criteria</h2>
+            </div>
+            <div class="link-schedule box">
+                <a href="/schedule.html">
+                    <h2>View Schedule Pg</h2>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer> 
+        <p>
+            &copy;2020 - For Educational Purposes Only
+        </p>
+        <address>
+            Vancouver, BC
+        </address>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+
 </body>
 </html>
