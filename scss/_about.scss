@@ -20,8 +20,67 @@
             }
         }
 
+        .bold-me {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .intro {
+            border: 1px solid $secondary-color;
+            border-left: 5px solid $secondary-color;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+    
+            blockquote {
+                margin: 10px;
+                font-size: .9rem;
+                padding: .5rem;
+            }
+        }
+        h2 {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .learning {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                display: block;
+            }
+
+            @media only screen and (min-width: 600px) {
+                flex-direction: row;
+
+                img {
+                    width: 40%;  
+                }
+            }
+        }
+
         .box {
-            border: 3px solid $main-color;
+            border-left: 5px solid $secondary-color;
+            li {
+                margin-left: 30px;
+                list-style-type: disc;
+            }
+            p {
+                padding-left: 10px;
+            }
+            p:first-of-type {
+                margin-top: 10px;
+            }
+            p:last-of-type {
+                margin-bottom: 10px;
+            }
+            img {
+                padding: 10px;
+            }
         }
 
         .inner-flex {
@@ -37,23 +96,19 @@
                     margin-left: 15px;
                 }
             }
-        }
-        .intro {
-            border: 1px solid $secondary-color;
-            border-left: 5px solid $secondary-color;
-            margin: 20px auto;
-    
-            blockquote {
-                margin: 10px;
-                font-size: .9rem;
-                padding: .5rem;
+
+            table, th {
+                border: 3px solid $main-color;
             }
-        }
-        h2 {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
+
+            th, tr {
+                padding: 10px;
+            }
+
+            table {
+                width: 90%;
+                margin: 7px auto;
+            }
         }
     }
 }

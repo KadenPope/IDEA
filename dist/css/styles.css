@@ -30,7 +30,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 ol, ul, li {
@@ -57,6 +57,7 @@ table {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -399,8 +400,89 @@ footer {
   width: 100%;
 }
 
+.about .wrapper .bold-me {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.about .wrapper .intro {
+  border: 1px solid #592140;
+  border-left: 5px solid #592140;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .wrapper .intro blockquote {
+  margin: 10px;
+  font-size: .9rem;
+  padding: .5rem;
+}
+
+.about .wrapper h2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about .wrapper .learning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .wrapper .learning img {
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .about .wrapper .learning {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about .wrapper .learning img {
+    width: 40%;
+  }
+}
+
 .about .wrapper .box {
-  border: 3px solid #2A708C;
+  border-left: 5px solid #592140;
+}
+
+.about .wrapper .box li {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+
+.about .wrapper .box p {
+  padding-left: 10px;
+}
+
+.about .wrapper .box p:first-of-type {
+  margin-top: 10px;
+}
+
+.about .wrapper .box p:last-of-type {
+  margin-bottom: 10px;
+}
+
+.about .wrapper .box img {
+  padding: 10px;
 }
 
 .about .wrapper .inner-flex {
@@ -428,22 +510,16 @@ footer {
   }
 }
 
-.about .wrapper .intro {
-  border: 1px solid #592140;
-  border-left: 5px solid #592140;
-  margin: 20px auto;
+.about .wrapper .inner-flex table, .about .wrapper .inner-flex th {
+  border: 3px solid #2A708C;
 }
 
-.about .wrapper .intro blockquote {
-  margin: 10px;
-  font-size: .9rem;
-  padding: .5rem;
+.about .wrapper .inner-flex th, .about .wrapper .inner-flex tr {
+  padding: 10px;
 }
 
-.about .wrapper h2 {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+.about .wrapper .inner-flex table {
+  width: 90%;
+  margin: 7px auto;
 }
 /*# sourceMappingURL=styles.css.map */
