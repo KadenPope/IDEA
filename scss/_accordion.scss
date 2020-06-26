@@ -4,18 +4,25 @@
     background-color: $main-color;
     color: $light-text;
     cursor: pointer;
-    padding: 18px;
+    padding: 1rem 1rem 1rem 2rem;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1.25rem;
     transition: 0.4s;
-    border: 4px solid $main-color-hover;
+    border: 2.5px solid $main-color;
+    &:nth-of-type(odd) {
+        background-color: lighten($main-color, 20);
+    }
 }
     
 .active, .accordion:hover {
-    background-color: $main-color-hover; 
+    background-color: lighten($main-color, 30);
+    color: $dark-text;
+    &:nth-of-type(odd) {
+        background-color: lighten($main-color-hover, 20);
+    }
 }
     
 .panel {
@@ -23,8 +30,6 @@
     display: none;
     background-color: $light-text;
     overflow: hidden;
-    border-left: 3px solid $main-color;
-    border-right: 3px solid $main-color;
 
     li {
         list-style-type: disc;

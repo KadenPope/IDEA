@@ -1,13 +1,4 @@
 .about {
-    header {
-        h1 {
-            text-align: center;
-            font-size: 2rem;
-            padding: 15px 0;
-            color: $light-text;
-            background-color: rgba($secondary-color-hover, .85);
-        }
-    }
     .wrapper {
         display: flex;
         flex-direction: column;

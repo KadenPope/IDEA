@@ -1,4 +1,17 @@
 header {
+    background-color: rgba($secondary-color-hover, .85);
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 15px 0;
+        color: $light-text;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.25rem;
+        color: $light-text;
+        padding-bottom: 10px;
+    }
     position: relative;
     display: flex;
     flex-direction: column;

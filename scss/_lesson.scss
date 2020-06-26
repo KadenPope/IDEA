@@ -1,0 +1,28 @@
+.lesson {
+    .wrapper {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media only screen and (min-width: 650px) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1.5rem;
+        }
+
+        .lessons {
+            margin: 10px;
+            border: 2px solid $main-color;
+
+            h2 {
+                background-color: $main-color;
+                color: $light-text;
+            }
+
+            li {
+                margin-left: 30px;
+                color: $dark-text;
+                list-style-type: disc;
+            }
+        }
+    }
+}

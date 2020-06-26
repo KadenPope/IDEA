@@ -72,7 +72,14 @@ body {
 
 body .wrapper {
   max-width: 1200px;
-  margin: 0 auto 90px auto;
+  margin: 0 auto;
+  background-color: #f2f9fb;
+}
+
+@media only screen and (min-width: 760px) {
+  body .wrapper {
+    padding: 0 30px 90px 30px;
+  }
 }
 
 body h2 {
@@ -83,6 +90,7 @@ body h2 {
 }
 
 header {
+  background-color: rgba(114, 53, 98, 0.85);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +103,20 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px 0;
+  color: white;
+}
+
+header h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  padding-bottom: 10px;
 }
 
 header .hero-image {
@@ -290,19 +312,28 @@ footer {
   background-color: #2A708C;
   color: white;
   cursor: pointer;
-  padding: 18px;
+  padding: 1rem 1rem 1rem 2rem;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.25rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 4px solid #50AABF;
+  border: 2.5px solid #2A708C;
+}
+
+.accordion:nth-of-type(odd) {
+  background-color: #51a8cb;
 }
 
 .active, .accordion:hover {
-  background-color: #50AABF;
+  background-color: #78bcd7;
+  color: black;
+}
+
+.active:nth-of-type(odd), .accordion:hover:nth-of-type(odd) {
+  background-color: #9bceda;
 }
 
 .panel {
@@ -310,8 +341,6 @@ footer {
   display: none;
   background-color: white;
   overflow: hidden;
-  border-left: 3px solid #2A708C;
-  border-right: 3px solid #2A708C;
 }
 
 .panel li {
@@ -409,14 +438,6 @@ footer {
   text-align: center;
   font-size: 2rem;
   line-height: 200px;
-}
-
-.about header h1 {
-  text-align: center;
-  font-size: 2rem;
-  padding: 15px 0;
-  color: white;
-  background-color: rgba(114, 53, 98, 0.85);
 }
 
 .about .wrapper {
@@ -561,20 +582,105 @@ footer {
   margin: 7px auto;
 }
 
-.schedule header h1 {
-  text-align: center;
-  font-size: 2rem;
-  padding: 15px 0;
-  margin: 20px 0;
-  color: white;
-  background-color: rgba(114, 53, 98, 0.85);
+.schedule header {
+  margin: 120px 0 20px 0;
 }
 
 .schedule .wrapper {
-  max-width: 1100px;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.schedule .wrapper .schedule-accordion {
+  margin: 0 auto 35px auto;
+  width: 90%;
+}
+
+.schedule .wrapper .assignment-due {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .schedule .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .schedule .wrapper .schedule-accordion {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 50%;
+  }
+  .schedule .wrapper .assignment-due {
+    margin-left: 1rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .schedule .wrapper ul li {
   line-height: 2;
+}
+
+.schedule table, .schedule th {
+  border: 3px solid #2A708C;
+}
+
+.schedule th, .schedule tr {
+  padding: 10px;
+}
+
+.schedule table {
+  width: 90%;
+  margin: 7px auto 20px auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .schedule table {
+    width: 100%;
+  }
+}
+
+.lesson .wrapper {
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 650px) {
+  .lesson .wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+}
+
+.lesson .wrapper .lessons {
+  margin: 10px;
+  border: 2px solid #2A708C;
+}
+
+.lesson .wrapper .lessons h2 {
+  background-color: #2A708C;
+  color: white;
+}
+
+.lesson .wrapper .lessons li {
+  margin-left: 30px;
+  color: black;
+  list-style-type: disc;
 }
 /*# sourceMappingURL=styles.css.map */

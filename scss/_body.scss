@@ -1,7 +1,11 @@
 body {
     .wrapper {
         max-width: 1200px;
-        margin: 0 auto 90px auto;
+        margin: 0 auto;
+        background-color: lighten($main-color, 61);
+        @media only screen and (min-width: 760px) {
+            padding: 0 30px 90px 30px;
+        }
     }
     h2 {
         font-size: 1.5rem;
