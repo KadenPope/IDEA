@@ -1,7 +1,7 @@
 body {
     .wrapper {
         max-width: 1200px;
-        margin: 0 auto;
+        // margin: 10px auto 40px auto;
         background-color: lighten($main-color, 61);
         @media only screen and (min-width: 760px) {
             padding: 0 30px 90px 30px;

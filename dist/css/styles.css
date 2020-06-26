@@ -68,7 +68,6 @@ body {
 
 body .wrapper {
   max-width: 1200px;
-  margin: 0 auto;
   background-color: #f2f9fb;
 }
 
@@ -270,8 +269,8 @@ body .navbar .nav-show {
   }
 }
 
-header {
-  margin-top: 90px;
+.wrapper {
+  margin: 20px 0 85px 0;
 }
 
 footer {
@@ -316,7 +315,7 @@ footer {
   font-size: 1.25rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 2.5px solid #2A708C;
+  border: 1px solid #592140;
 }
 
 .accordion:nth-of-type(odd) {
@@ -352,6 +351,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+  margin: 0 auto;
 }
 
 .home main .descriptions {
@@ -433,6 +433,10 @@ footer {
   text-align: center;
   font-size: 2rem;
   line-height: 200px;
+}
+
+.about header {
+  margin: 100px 0 0 0;
 }
 
 .about .wrapper {
@@ -578,7 +582,7 @@ footer {
 }
 
 .schedule header {
-  margin: 120px 0 20px 0;
+  margin: 100px 0 20px 0;
 }
 
 .schedule .wrapper {
@@ -646,8 +650,12 @@ footer {
   }
 }
 
+.lesson header {
+  margin-top: 100px;
+}
+
 .lesson .wrapper {
-  padding-top: 30px;
+  margin-top: 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -679,6 +687,10 @@ footer {
   list-style-type: disc;
 }
 
+.lesson-one header {
+  margin: 100px 0 15px 0;
+}
+
 .lesson-one h2 {
   text-align: center;
 }
@@ -693,8 +705,8 @@ footer {
 }
 
 .lesson-one .important {
-  border: 1px solid #592140;
-  border-left: 5px solid #592140;
+  border: 1px solid #2a708c;
+  border-left: 5px solid #2a708c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,7 +714,12 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.lesson-one .important h3 {
+  background-color: #2a708c;
 }
 
 .lesson-one .important blockquote {

@@ -1,6 +1,9 @@
 .lesson {
+    header {
+        margin-top: 100px;
+    }
     .wrapper {
-        padding-top: 30px;
+        margin-top: 30px;
         display: grid;
         grid-template-columns: 1fr;
 

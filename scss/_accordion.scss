@@ -11,7 +11,7 @@
     outline: none;
     font-size: 1.25rem;
     transition: 0.4s;
-    border: 2.5px solid $main-color;
+    border: 1px solid rgba($secondary-color, 40);
     &:nth-of-type(odd) {
         background-color: lighten($main-color, 20);
     }
