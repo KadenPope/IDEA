@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="54.26025mm"
+   height="27.214285mm"
+   viewBox="0 0 54.26025 27.214285"
+   version="1.1"
+   id="svg3729"
+   sodipodi:docname="comp1950_logo1.svg"
+   inkscape:export-filename="C:\Users\jethro\Desktop\drawing23.svg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <defs
+     id="defs3723">
+    <linearGradient
+       gradientTransform="translate(-34.114562,-61.232143)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient3694"
+       id="linearGradient3696"
+       x1="60.476189"
+       y1="71.348213"
+       x2="73.516373"
+       y2="93.837799"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3694">
+      <stop
+         style="stop-color:#008000;stop-opacity:1;"
+         offset="0"
+         id="stop3690" />
+      <stop
+         style="stop-color:#008000;stop-opacity:0;"
+         offset="1"
+         id="stop3692" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="141.50033"
+     inkscape:cy="46.012084"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1532"
+     inkscape:window-height="772"
+     inkscape:window-x="4003"
+     inkscape:window-y="81"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3726">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.26458332"
+       id="rect6013"
+       width="55.845982"
+       height="27.970238"
+       x="-0.75595242"
+       y="-0.47247115" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.5960654,-0.66666698)">
+    <ellipse
+       style="fill:url(#linearGradient3696);fill-opacity:1;stroke-width:0.26458332"
+       id="path3686"
+       cx="27.873533"
+       cy="14.273809"
+       rx="22.678572"
+       ry="13.607142" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.42580891px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#24221c;fill-opacity:1;stroke:none;stroke-width:0.28564522"
+       x="8.4495707"
+       y="14.110134"
+       id="text4778"
+       transform="scale(0.71674364,1.395199)"><tspan
+         sodipodi:role="line"
+         id="tspan4776"
+         x="8.4495707"
+         y="14.110134"
+         style="fill:#24221c;stroke-width:0.28564522">COMP1950</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.42580986px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.28564525;"
+       x="9.1535654"
+       y="13.910917"
+       id="text4778-5"
+       transform="scale(0.71674364,1.395199)"><tspan
+         sodipodi:role="line"
+         id="tspan4776-8"
+         x="9.1535654"
+         y="13.910917"
+         style="fill:#ffcc00;stroke-width:0.28564525;">COMP1950</tspan></text>
+  </g>
+</svg>
