@@ -47,14 +47,22 @@
         <div class="lesson-accordion">
             <button class="accordion">Agenda</button>
             <div class="panel">
-                <ol>
+                <ul>
                     <li>Introductions</li>
                     <li>Orientation</li>
-                    <li>Filezilla Setup</li>
-                    <li>Web Developlment Tools</li>
-                    <li>Stadndards Based Development</li>
+                    <li>Filezilla</li>
+                    <li>VS Code</li>
+                    <li>Browser Based Development</li>
+                    <li>Browser Based Extensions</li>
+                    <li>Browser Based Diagnostic Tools</li>
+                    <li>Web Browser Tools</li>
+                    <li>W3C - World Wide Web Consortium</li>
+                    <li>Standards of Web Development</li>
+                    <li>Standards of File and Folder Naming</li>
+                    <li>Standards of File Management</li>
+                    <li>Standards of Code Style and Organization</li>
                     <li>To do</li>
-                </ol>
+                </ul>
             </div>
 
             <button class="accordion" id="intoductions">Introductions</button>
@@ -76,8 +84,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h2>Course Overview</h2>
-                    <p>See the <a href="about.html">About Page</a> to help you determine if this class is right for you.</p>
+                    <h3>
+                        Course Overview
+                    </h3>
+                    <p>See the <a href="about.html">About Page</a> for a general description about COMP 1950 to help you determine if this class is right for you.</p>
                 </div>
             </div>
 
@@ -390,19 +400,122 @@
                 </ul>
             </div>
 
-            <button class="accordion" id="to-do">To Do</button>
+            <button class="accordion" id="style-organization">Standards of Code Style and Organization</button>
             <div class="panel">
-                
+                <h3>COMP 1950 Student Expectations</h3>
+                <li>Comment all code with your name (or nickname if you prefer). Do this for all text based files (.html, .css, .js, .php, etc)</li>
+                <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.</li>
+                <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your .html files as well.</li>
+                <li>Use the .html extension for all HTML files (not .htm). Use the typical extension for all other text based files.</li>
+                <li>Write structurally valid HTML code: W3C HTML validator</li>
+                <li>Write syntactically valid CSS code: W3C CSS validator</li>
+
+                <h3>
+                    What is Semantic Markup?
+                </h3>
+                <ul>
+                    <li>The practice of organizing your content into a structured hierarchy</li>
+                    <li>Using appropriate tags to explain and describe the content</li>
+                    <li>H1 to H6 tags for summary headings</li>
+                    <li>UL tags for unsorted, unranked, related points</li>
+                    <li>OL tags for sorted, ranked, related points</li>
+                    <li>Paragraph tags instead of double BR tags</li>
+                    <li>HTML tables used for semantic value (tabular data), not for layouts</li>
+                </ul>
+
+                <div class="important">
+                    <h3>IMPORTANT!</h3>
+                    <blockquote>Separate Content (HTML) from Presentation (CSS)</blockquote>
+                </div>
+
+                <h3>Building Content Relationships</h3>
+                <ul>
+                    <li>Use appropriate tags for headings, content, sub-content, lists</li>
+                    <li>This builds a relationship that descends from the title of the page</li>
+                    <li>Each section is a discrete piece of information</li>
+                    <li>Headings summarize the following content</li>
+                    <li>Citations, quotes, code samples can be contextualized by nearest heading</li>
+                </ul>
+
+                <h3>Logical vs Physical Styles</h3>
+                <ul>
+                    <li>Tend to display identically in browsers, but are fundamentally different</li>
+                    <li>Physical styles define what content looks like</li>
+                    <li>Logical styles define what content is</li>
+                    <li>Logical styles are important for screen readers, physical styles are not</li>
+                    <li>Given a choice, logical styles are usually preferred</li>
+                </ul>
+                <h3>
+                    Some physical styles:
+                </h3>
+                <ul>
+                    <li>b - BOLD</li>
+                    <li>i - ITALIC</li>
+                    <li>s - Strikethrough</li>
+                    <li>u - Underline</li>
+                </ul>
+                <h3>
+                    Logical Styling
+                </h3>
+                <ul>
+                    <li>Best way to markup content for long-term usage</li>
+                    <li>Use CSS to change style (and some behaviour)</li>
+                    <li>Use DOM to change behaviour (via scripting)</li>
+                    <li>Requires thinking ahead</li>
+                </ul>
+                <h3>
+                    Some Logical Styling
+                </h3>
+                <ul>
+                    <li>strong - Increase importance</li>
+                    <li>em - Add Emphasis</li>
+                    <li>code - Code sample</li>
+                    <li>kbd - Keyboard entry</li>
+                    <li>samp - Programming sample</li>
+                    <li>var - Variable</li>
+                    <li>cite - Citation</li>
+                    <li>dfn - Definition</li>
+                    <li>abbr - Abbreviation</li>
+                    <li>acronym - Acronym</li>
+                    <li>del - Deleted text</li>
+                    <li>ins - Inserted text</li>
+                </ul>
+                <h3>
+                    Key Advantages of Semantic Content
+                </h3>
+                <ul>
+                    <li>Content is relational - context can be determined easily</li>
+                    <li>Extracting important pieces of information is simple (CITE or CODE tags for example)</li>
+                    <li>Search engine optimization (SEO)</li>
+                    <li>Syndication</li>
+                    <li>Big win for frameworks such as jQuery</li>
+                    <li>Screen reader friendly</li>
+                    <li>Increased Accessibility</li>
+                    <li>Separating style (CSS) from structure (HTML), makes it easier to maintain</li>
+                </ul>
             </div>
 
             <button class="accordion" id="to-do">To Do</button>
             <div class="panel">
-                
-            </div>
+                <h3>Homework</h3>
+                <ul>
+                    <li>Download, review, and complete the homework assignment from D2L</li>
+                    <li>Confirm you have access to your online webspace and that your FTP credentials are valid</li>
+                    <li>Be sure you know how to add/edit/remove HTML and CSS using a browser tool</li>
+                    <li>
+                        Install VS Code on your home computer or laptop. Explore some of the accompanying help documentation to familiarize yourself with how to code your HTML and CSS using this tool.
+                        <ul>
+                            <li>Download VS Code</li>
+                            <li>Setup and basics of VS Code</li>
+                            <li>VS Code help documentation</li>
+                        </ul>
+                    </li>
+                </ul>
 
-            <button class="accordion" id="to-do">To Do</button>
-            <div class="panel">
-                
+                <div class="important">
+                    <h3>TIP:</h3>
+                    <blockquote>There will be a practical, open book quiz at the start of session #2! (hint: practice using a browser based diagnostic tool)</blockquote>
+                </div>
             </div>
         </div>
     </main>
