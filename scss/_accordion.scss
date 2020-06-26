@@ -26,13 +26,12 @@
 }
     
 .panel {
-    padding: 0 18px;
+    padding: 0;
     display: none;
     background-color: $light-text;
     overflow: hidden;
 
     li {
-        list-style-type: disc;
         margin-left: 20px;
     }
 }
