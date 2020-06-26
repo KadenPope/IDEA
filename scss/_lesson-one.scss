@@ -13,8 +13,22 @@
         display: block;
         width: 100%;
         padding: 20px 0;
-        background-color: $secondary-color-hover;
+        background-color: lighten($secondary-color-hover, 5);
         color: $light-text
+    }
+
+    h3, ul, ol, blockquote, p {
+        padding: 10px;
+    }
+
+    ol {
+        li {
+            margin-left: 40px;
+        }
+    }
+
+    .panel {
+        margin: 20px auto 40px auto;
     }
 
     .important {
@@ -27,26 +41,25 @@
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin: 20px auto;
+        margin: 0 auto 20px auto;
 
         blockquote {
-            margin: 10px;
+            margin: 0 10px 10px 10px;
             font-size: .9rem;
             padding: .5rem;
         }
     }
-    .single-column {
+
+    img {
         width: 90%;
-        margin: 0 auto;
+        margin: 5px auto;
     }
 
     .two-column {
         width: 100%;
-
-        .column-child {
-            width: 90%;
-            margin: 20px auto;
-        }
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
 
         .filezilla {
             img {
@@ -55,7 +68,20 @@
         }
         
         @media only screen and (min-width: 700px) {
+            flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            .column-child {
+                width: 45%;
+            }
         }
+    }
+
+    .single-column {
+        @media only screen and (min-width: 700px) {
+            width: 100%;
+            margin: 10px auto;
+        }
+
     }
 }

@@ -27,8 +27,8 @@
     
 .panel {
     padding: 0;
-    display: none;
-    background-color: $light-text;
+    display: none;        
+    background-color: lighten($secondary-color-hover,55); 
     overflow: hidden;
 
     li {

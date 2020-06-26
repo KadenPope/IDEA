@@ -270,12 +270,12 @@ body .navbar .nav-show {
 }
 
 .wrapper {
-  margin: 20px 0 85px 0;
+  margin: 20px auto 85px auto;
 }
 
 footer {
   width: 100%;
-  font-size: 1rem;
+  font-size: .8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,7 +334,7 @@ footer {
 .panel {
   padding: 0;
   display: none;
-  background-color: white;
+  background-color: #ebd4e5;
   overflow: hidden;
 }
 
@@ -700,8 +700,20 @@ footer {
   display: block;
   width: 100%;
   padding: 20px 0;
-  background-color: #723562;
+  background-color: #833d71;
   color: white;
+}
+
+.lesson-one h3, .lesson-one ul, .lesson-one ol, .lesson-one blockquote, .lesson-one p {
+  padding: 10px;
+}
+
+.lesson-one ol li {
+  margin-left: 40px;
+}
+
+.lesson-one .panel {
+  margin: 20px auto 40px auto;
 }
 
 .lesson-one .important {
@@ -715,7 +727,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
 }
 
 .lesson-one .important h3 {
@@ -723,23 +735,26 @@ footer {
 }
 
 .lesson-one .important blockquote {
-  margin: 10px;
+  margin: 0 10px 10px 10px;
   font-size: .9rem;
   padding: .5rem;
 }
 
-.lesson-one .single-column {
+.lesson-one img {
   width: 90%;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .lesson-one .two-column {
   width: 100%;
-}
-
-.lesson-one .two-column .column-child {
-  width: 90%;
-  margin: 20px auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .lesson-one .two-column .filezilla img {
@@ -748,9 +763,26 @@ footer {
 
 @media only screen and (min-width: 700px) {
   .lesson-one .two-column {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lesson-one .two-column .column-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .lesson-one .single-column {
+    width: 100%;
+    margin: 10px auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

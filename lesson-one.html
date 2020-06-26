@@ -47,7 +47,7 @@
         <div class="lesson-accordion">
             <button class="accordion">Agenda</button>
             <div class="panel">
-                <ul>
+                <ol>
                     <li>Introductions</li>
                     <li>Orientation</li>
                     <li>Filezilla</li>
@@ -62,28 +62,28 @@
                     <li>Standards of File Management</li>
                     <li>Standards of Code Style and Organization</li>
                     <li>To do</li>
-                </ul>
+                </ol>
             </div>
 
             <button class="accordion" id="intoductions">Introductions</button>
                 <div class="panel">
-                    <div class="two-column">
-                        <div class="column-child">
+                    <section class="two-column">
+                        <section class="column-child">
                             <h3>Instructors</h3>
                             <ul>
                                 <li>Jeff Parker - <a href="mailto: jeffrey_parker@bcit.ca">jeffrey_parker@bcit.ca</a></li>
                                 <li>Michael Whyte - <a href="mailto: michael_whyte@bcit.ca">michael_whyte@bcit.ca</a></li>
                             </ul>
-                        </div>
-                        <div class="column-child">
+                        </section>
+                        <section class="column-child">
                             <h3>All About You</h3>
                             <ul>
                                 <li>Your Name</li>
                                 <li>Your Background</li>
                                 <li>What do you hope to achieve in this course - Be Specific!</li>
                             </ul>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     <h3>
                         Course Overview
                     </h3>
@@ -94,21 +94,25 @@
             <button class="accordion" id="orientation">Orientation</button>
             <div class="panel">
                 <section class="two-column"> 
-                    <div class="important column-child">
+                    <section class="important column-child">
                         <h3>Important!</h3>
                         <blockquote>BCIT lab computers are re-imaged each day. Files you save on the local C: drive of a lab computer will be erased after the computer power is cycled.</blockquote>
-                    </div>
-                    <div class="column-child">
-                        <h3>Saving Files</h3>
+                    </section>
+                    <section class="column-child">
+                        <h3>
+                            Saving Files
+                        </h3>
                         <ul>
                             <li>Use BCIT Sharefile to save your work</li>
                             <li>Save your work to your personal USB or cloud storage account</li>
                             <li>Use your own laptop in class, and don't use the BCIT lab computers</li>
                         </ul>
-                    </div>
+                    </section>
                 </section>
                 <section class="single-column">
-                    <h3>Course Materials</h3>
+                    <h3>
+                        Course Materials
+                    </h3>
                     <p>COMP 1950 homework assignments, quizzes, in class exercises and example code can be accessed via Desire 2 Learn (D2L). Use your BCIT student number and password to access D2L. Course materials will become avilable as the course progresses. It is your responsibility to log in and download files as they become available.</p>
                     <p>If you have difficulty gaining access, consult the D2L help documentation, or contact BCIT Tech help desk at 604-412-7444 (Toll free: 1-800-351-5533).</p>
                 </section>
@@ -167,6 +171,7 @@
                         <li>Click: Connect</li>
                         <li>9.	If you experience connectivity problems, re-check your input, or ask your instructor for assistance.</li>
                     </ol>
+                    <img src="images/filezilla_screenshot.png" alt="Screenshot of FileZilla completed with above information">
                 </section>
             </div>
 
@@ -282,7 +287,7 @@
 
             <button class="accordion" id="Web Broswer Tools">Web Browser Tools</button>
             <div class="panel">
-                <h3>Web Browser Tools: Available On:</h3>
+                <h3>Web Browser Tools Available On:</h3>
                 <ul>
                     <li>Firefox</li>
                     <li>Chrome</li>
@@ -403,13 +408,23 @@
 
             <button class="accordion" id="style-organization">Standards of Code Style and Organization</button>
             <div class="panel">
-                <h3>COMP 1950 Student Expectations</h3>
-                <li>Comment all code with your name (or nickname if you prefer). Do this for all text based files (.html, .css, .js, .php, etc)</li>
-                <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.</li>
-                <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your .html files as well.</li>
-                <li>Use the .html extension for all HTML files (not .htm). Use the typical extension for all other text based files.</li>
-                <li>Write structurally valid HTML code: W3C HTML validator</li>
-                <li>Write syntactically valid CSS code: W3C CSS validator</li>
+                <h3>
+                    COMP 1950 Student Expectations
+                </h3>
+                <section class="two-column">
+                    <div class="column-child">
+                        <img src="images/css_commenting.png" alt="Text editor with commented code">    
+                    </div>
+                    <div class="column-child">
+                        <li>Comment all code with your name (or nickname if you prefer). Do this for all text based files (.html, .css, .js, .php, etc)</li>
+                        <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.</li>
+                        <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your .html files as well.</li>
+                        <li>Use the .html extension for all HTML files (not .htm). Use the typical extension for all other text based files.</li>
+                        <li>Write structurally valid HTML code: W3C HTML validator</li>
+                        <li>Write syntactically valid CSS code: W3C CSS validator</li>
+                    </div>
+                </section>
+
 
                 <h3>
                     What is Semantic Markup?
