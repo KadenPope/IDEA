@@ -687,15 +687,15 @@ footer {
   list-style-type: disc;
 }
 
-.lesson-one header {
+.lesson-template header {
   margin: 100px 0 15px 0;
 }
 
-.lesson-one h2 {
+.lesson-template h2 {
   text-align: center;
 }
 
-.lesson-one h3 {
+.lesson-template h3 {
   text-align: center;
   display: block;
   width: 100%;
@@ -704,19 +704,19 @@ footer {
   color: white;
 }
 
-.lesson-one h3, .lesson-one ul, .lesson-one ol, .lesson-one blockquote, .lesson-one p {
+.lesson-template h3, .lesson-template ul, .lesson-template ol, .lesson-template blockquote, .lesson-template p {
   padding: 10px;
 }
 
-.lesson-one ol li {
+.lesson-template ol li {
   margin-left: 40px;
 }
 
-.lesson-one .panel {
-  margin: 20px auto 40px auto;
+.lesson-template .panel {
+  margin: 0 auto 40px auto;
 }
 
-.lesson-one .important {
+.lesson-template .important {
   border: 1px solid #2a708c;
   border-left: 5px solid #2a708c;
   display: -webkit-box;
@@ -730,22 +730,26 @@ footer {
   margin: 0 auto 20px auto;
 }
 
-.lesson-one .important h3 {
+.lesson-template .important h3 {
   background-color: #2a708c;
 }
 
-.lesson-one .important blockquote {
+.lesson-template .important blockquote {
   margin: 0 10px 10px 10px;
   font-size: .9rem;
   padding: .5rem;
 }
 
-.lesson-one img {
+.lesson-template img {
   width: 90%;
   margin: 5px auto;
 }
 
-.lesson-one .two-column {
+.lesson-template .column-child {
+  display: block;
+}
+
+.lesson-template .two-column {
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -757,32 +761,67 @@ footer {
           flex-direction: column;
 }
 
-.lesson-one .two-column .filezilla img {
+.lesson-template .two-column .filezilla img {
   width: 60%;
 }
 
 @media only screen and (min-width: 700px) {
-  .lesson-one .two-column {
+  .lesson-template .two-column {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .lesson-one .two-column .column-child {
+  .lesson-template .two-column .column-child {
     width: 45%;
   }
 }
 
 @media only screen and (min-width: 700px) {
-  .lesson-one .single-column {
+  .lesson-template .single-column {
     width: 100%;
     margin: 10px auto;
   }
+}
+
+.lesson-two .wrapper dl {
+  margin: 15px;
+}
+
+.lesson-two .wrapper dl dt {
+  font-weight: bold;
+}
+
+.lesson-two .wrapper dl dd {
+  margin: 0 0 20px 20px;
+}
+
+.contact {
+  margin-top: 100px;
+}
+
+.contact .wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.contact .wrapper form {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .wrapper form * {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

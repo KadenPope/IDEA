@@ -1,4 +1,4 @@
-.lesson-one {
+.lesson-template {
 
     header {
         margin: 100px 0 15px 0;
@@ -28,7 +28,7 @@
     }
 
     .panel {
-        margin: 20px auto 40px auto;
+        margin: 0 auto 40px auto;
     }
 
     .important {
@@ -55,6 +55,10 @@
         margin: 5px auto;
     }
 
+    .column-child {
+        display: block;
+    }
+
     .two-column {
         width: 100%;
         margin: 0 auto;
@@ -69,7 +73,7 @@
         
         @media only screen and (min-width: 700px) {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             .column-child {
                 width: 45%;

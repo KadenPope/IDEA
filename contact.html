@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COMP 1950 | Lesson 2 </title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+</head>
+
+
+<body class="contact">
+
+    <nav class="navbar">
+        <div>
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="BCIT Logo">
+            </a>
+            <button id = "menu-button">
+                MENU
+            </button>
+        </div>
+
+        <ul class = "nav-list">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+                <a href="lesson.html">Lessons</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header> 
+        <h1>
+            Contact Us
+        </h1>
+    </header>   
+
+    <main class="wrapper">
+        <form action="">
+            <div>
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div>
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div>
+                <label for="student-num">Student Number (if applicable):</label>
+                <input type="text" id="student-num" name="student-num" pattern="[Aa]{1}[0-9]{8}">               
+            </div>
+
+            <p>Are You a Prospective or Current Student?</p>
+            <div>
+                <div>
+                    <input type="radio" id="prospective" name="student-type" value="prospective" checked>
+                    <label for="prospective">Prospective Student</label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="current" name="student-type" value="current">
+                    <label for="current">Current Student</label>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer> 
+        <p>
+            &copy;2020 - For Educational Purposes Only
+        </p>
+        <address>
+            Vancouver, BC
+        </address>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/accordion.js"></script>
+
+</body>
+</html>

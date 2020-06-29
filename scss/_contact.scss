@@ -1,0 +1,17 @@
+.contact {
+    margin-top: 100px;
+    .wrapper {
+        
+        width: 95%;
+        margin: 0 auto;
+
+        form {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            * {
+                width: 100%;
+            }
+        }
+    }
+}
