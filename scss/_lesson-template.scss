@@ -50,13 +50,27 @@
         }
     }
 
-    img {
-        width: 90%;
-        margin: 5px auto;
-    }
+    // img {
+    //     width: 90%;
+    //     margin: 5px auto;
+    // }
 
     .column-child {
         display: block;
+        figure {
+            margin: 0;
+            position: relative;
+            padding-top: calc(105 / 175 * 100%);
+            background-color: white;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0; 
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 
     .two-column {

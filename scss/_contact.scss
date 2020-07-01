@@ -6,11 +6,36 @@
         margin: 0 auto;
 
         form {
-            padding-top: 20px;
+            padding: 20px 0 50px 0;
             display: flex;
             flex-direction: column;
-            * {
+            width: 100%;
+            div {
+                padding-bottom: 10px;
+            }
+            input {
                 width: 100%;
+                line-height: 200%;
+            }
+            .student-types {
+                input {
+                    width: auto;
+                    font-size: 16px;
+                }
+            }
+            .student-type {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            input[type="submit"] {
+                display: block;
+                width: 100%;  
+                height: 50px;
+                font-size: 16px;
+                background-color: rgba($secondary-color, .3);
+                border-radius: 10px;
+                border: 2px solid $secondary-color;
             }
         }
     }

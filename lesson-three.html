@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COMP 1950 | Lesson 3 </title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+</head>
+
+
+<body class="lesson-template lesson-three">
+
+    <nav class="navbar">
+        <div>
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="BCIT Logo">
+            </a>
+            <button id = "menu-button">
+                MENU
+            </button>
+        </div>
+
+        <ul class = "nav-list">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+                <a href="lesson.html">Lessons</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header> 
+        <h1>
+            Lesson 2 - Notes
+        </h1>
+    </header>   
+
+    <main class="wrapper">
+
+        <div class="lesson-accordion">
+            <button class="accordion">Agenda - UPDATE ME</button>
+            <div class="panel">
+                <ol>
+                    <li>Character Sets and Languages</li>
+                    <li>HTML</li>
+                    <li>HTML 4.01</li>
+                    <li>XHTML</li>
+                    <li>HTML5</li>
+                    <li>HTML5 Content Models</li>
+                    <li>HTML5 and Forms</li>
+                    <li>Scalable Vector Graphics (SVG)</li>
+                    <li>Multimedia</li>
+                    <li>HTML5 Today</li>
+                    <li>To Do</li>
+                </ol>
+            </div>
+
+            <button class="accordion">Referencing Stylesheets</button>
+            <div class="panel">
+                <section>
+                    <h3>Referencing CSS</h3>
+                    <p>
+                        When linking to external style sheets, there are a number of features to be aware of:
+                    </p>
+                        <ul>
+                            <li>Each stylesheet requires it's own link tag</li>
+                            <li>Multiple stylesheets can be loaded (main.css, fonts.css, layout.css, etc)</li>
+                            <li>rel determines how the HTML will use the file linked to (REQUIRED)</li>
+                            <li>href defines the path, relative or absolute, to the css file (REQUIRED)</li>
+                            <li>type attribute is has been deprecated (dropped in HTML5)</li>
+                            <li>title attribute allows the user to group stylesheets</li>
+                            <li>
+                                media attribute allows you to specify what medium this should be viewed in
+                                <ul>
+                                    <li>&lt; link	rel="stylesheet"</li>
+                                    <li>href="http://www.mysite.com/css/styles.css"</li>
+                                    <li>type="text/css"</li>
+                                    <li>title="Main Style" </li>
+                                    <li>	media="screen" /&gt;
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </section> 
+                <section>
+                    <h3>Media variations: media attribute</h3>
+                    <ul>
+                        <li>media="type" can be a powerful tool</li>
+                        <li>
+                            Examples of media types:
+                            <ul>
+                                <li>all - well supported, commonly used (DEFAULT)</li>
+                                <li>aural</li>
+                                <li>braille</li>
+                                <li>embossed</li>
+                                <li>handheld - not common (smart phones identify as screen)</li>
+                                <li>print - well supported, commonly used</li>
+                                <li>projection</li>
+                                <li>screen - well supported, commonly used</li>
+                                <li>tty</li>
+                                <li>tv</li>
+                            </ul>
+                        </li>
+                        <p class="important">
+                            Note that most smart phone devices (iPhones, Andriod, etc) do not identify themselves as media type handheld. The reasoning was that the devices were more than capable of displaying standard web sites, so they identify as screen
+                        </p>
+                    </ul>
+                </section>
+            </div>
+            
+
+            <button class="accordion">Alternate Stylesheets</button>
+            <div class="panel">
+                <section>
+                    <h3>
+                        Alternate style sheets: rel attribute
+                    </h3>
+                    <p>
+                        You can also have alternate stylesheets supported
+                    </p>
+                    <ul>
+                        <li>rel="stylesheet" defines the default stylesheets to use</li>
+                        <li>rel="alternate stylesheet" allows different styles to be defined</li>
+                        <li>TIP: If you have multiple sheets that belong to one "look" make sure they all have the same title</li>
+                        <li>You can create alternate style sheets for users, allowing them to select which ones they would like to see</li>
+                        <li>•	An example would be to create a 'Larger Text' style sheet with everything in a larger font, or providing an option for users to choose an austere, simple page instead of a colorful/image heavy stylesheet</li>
+                        <li>Many browsers are now giving users the ability to select which sheet they would like to see. (Firefox: View > Page Style)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Alternate style sheets: title attribute
+                    </h3>
+                    <ul>
+                        <li>A stylesheet is "persistent" if it is linked with rel="stylesheet" and has no title attribute. All persistent stylesheets are always used when rendering</li>
+                        <li>A stylesheet is "preferred" if it is linked with rel="stylesheet" and has a title attribute. these styles will be used as the default. preferred stylesheets with the same title are grouped together</li>
+                        <li>Finally, a stylesheet is "alternate" if it is linked with rel="alternate stylesheet" and has a title. These stylesheets are supposed to allow the user to choose stylesheets, they are grouped together by title and show up in the browser's stylesheet selector if it has one (View > Page Style in Firefox). Each group (by title) is mutually exclusive.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <button class="accordion">Style Types</button>
+            <div class="panel">
+                <section>
+                    <h3>Persistent Styles</h3>
+                    <p>Persistent styles apply in all cases, even when alternate styles are chosen.</p>
+                    <p>
+                        &lt;!-- rel="stylesheet" with NO title="" --&gt;
+                    </p>
+                    <p>
+                        &lt;link rel="stylesheet" href="css/persistent_styles.css" /&gt;
+                    </p>
+                </section>
+                <section>
+                    <h3>Preferred Styles</h3>
+                    <p>
+                        Preferred styles will be the default, but will be replaced if alternate styles are chosen.
+                    </p>
+                    <p>
+                        &lt;!-- rel="stylesheet" AND a title="" --&gt;
+                    </p>
+
+                    <p>
+                        &lt;link rel="stylesheet" href="css/default_styles.css" title="Standard Styling"	/&gt;
+
+                    </p>
+                </section>
+                <section>
+                    <h3>Alternate Styles</h3>
+                    <p>
+                        Alternate styles will not be applied by default, but may be chosen by the user agent. Each alternate stylesheet must have a title="".
+                    </p>
+                    <p>
+                        &lt;!-- use rel="alternate stylesheet" for alternative stylesheets... --&gt;
+                    </p>
+                    <p>&lt;link	rel="alternate stylesheet" 
+                        href="css/large_text.css"
+                        title="Large Text Styles" /&gt;
+                    </p>
+                </section>
+                <section>
+                    <h3>Grouping Stylesheets</h3>
+                    <p>
+                        If more than one link tag shares the same title="" then they will be grouped together.
+                    </p>
+                    <p>
+                        &lt;-- group stylesheets with shared title="" --&gt;
+                    </p>
+
+                    <p>
+                        &lt;link rel="alternate stylesheet" href="css/monchrome_layout.css" title="Monochrome Styles"	/&gt;
+                    </p>
+                    <p>
+                        &lt;link rel="alternate stylesheet" href="css/monchrome_fonts.css" title="Monochrome Styles" 	/&gt;
+                    </p>
+                    <p>
+                        To enable alternate stylesheet switching, you can either apply some javascript to manage the switch with hyperlinks, or use Firefox for alternate stylesheets.
+                    </p>
+                </section>
+            </div>
+
+
+            <button class="accordion">Importing</button>
+            <div class="panel">
+                <section>
+                    <h3>
+                        @import: Managing Multiple CSS Files
+                    </h3>
+                    <p>
+                        You can use the @import method to import multiple stylesheets from a basic stylesheet that you link to. This will reduce the clutter that can sometimes occur within the &lt;head&gt; section.
+                    </p>
+                    <p>
+                        It is also a great place to be able to manage your CSS. From your main document, create a &lt;link&gt; to your styles.css page.
+                    </p>
+                    <p>
+                        In the body of the styles.css file, import as many files as you need:
+                    </p>
+                    <ul>
+                        <li>@import url("css/type.css");</li>
+                        <li>@import url("css/nav.css");</li>
+                        <li>@import url("css/template.css");</li>
+                    </ul>
+                    <p class="important">NOTE: when using the @import directive in an external CSS file, ensure it comes before your CSS selector rules. It might be best to not include any CSS rules in a page that uses @import.</p>
+                </section>
+            </div>
+
+            <button class="accordion">Fonts</button>
+            <div class="panel">
+                <section>
+                    <h3>
+                        @charset: Assigning CSS Character Set
+                    </h3>
+                    <p>
+                        If your CSS files only contain standard keyboard characters, assigning the character set is not required. The CSS language itself does not use any exotic characters, so assigning a charset is often omitted. If, however, your CSS needs to use special characters, ensuring the correct character set can be very important. Eg: When using a pseudoclass to add content to HTML content: "Äwesome!"
+                    </p>
+                    <p>
+                        If needed, add the @charset rule to the top of the CSS document.
+                    </p>
+                    <p>
+                        /* assign charset at top of .css file */
+                    </p>
+                    <p>
+                        @charset "utf-8";
+                    </p>
+                    <p>
+                        /* CSS rules follow... */
+                    </p>
+                </section>
+
+                <section>
+                    <h3>
+                        @font-face And Font Servers
+                    </h3>
+                    <p>
+                        Fonts that aren't available on the client machine can be provided by a third-party font server or by your website's server. 
+                    </p>
+                    <ul>
+                        <li>Google Fonts</li>
+                        <li>Adobe Typekit</li>
+                        <li>Font Squirrel</li>
+                        <li>Plenty more available online...</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Third Party Font Server
+                    </h3>
+                    <p>
+                        Browse the font server site, select the fonts you like and they wil provide you with code for a &lt;link /&gt; tag to add to your HTML. You can then use the font in your CSS.
+                    </p>
+                    <p>
+                        &lt;!-- add the link tag to the HTML --&gt;
+                    </p>
+                    <p>
+                        &lt;link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" /&gt;
+                    </p>
+                    <p>
+                        /* use the font in the CSS */
+                    </p>
+                    <p>
+                        selector{
+                            font-family: 'Bungee', cursive;
+                        }                        
+                    </p>
+                    <p class="important">No longer stuck with 'Arial', 'Helvetica', 'Georgia' and the rest.</p>
+                </section>
+                <section>
+                    <h3>
+                        Serve Fonts From Your Website
+                    </h3>
+                    <p>
+                        If the font(s) are copyright free, or if you have license to distribute a font, you can serve them yourself using the CSS @font-face directive.
+                    </p>
+                    <p>
+                        Different client systems will need fonts in varying formats, so if you are distributing the font yourself, be sure to have the font available in most common formats.
+                    </p>
+                    <ul>
+                        <li>Obtain the font(s) you wish to use. You must either have license to distribute the font or the font must be copyright free.</li>
+                        <li>Upload your font(s) to a Font Generator to obtain a font kit including various formats for the font(s)</li>
+                        <li>Uncompress the font kit and locate it somewhere with your website files</li>
+                        <li>Use @font-face to load the fonts. The font-kit generated by Squirrel Font will include some same CSS to help you with the sometimes volumous coding</li>
+                        <li>Apply the new font in CSS</li>
+                    </ul>
+                    <p>
+                        /* load the font in CSS */
+                    </p>
+                    <p>
+                        @font-face {
+                            font-family: 'alex_brushregular';
+                            src: url('/fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+                                 url('/fonts/alexbrush-regular-webfont.woff') format('woff'), 
+                             url('/fonts/alexbrush-regular-webfont.ttf') format('tff');
+                        }
+                    </p>
+                    <p>
+                        /* use the font in CSS */   selector{	font: bold 20px alex_brushregular ;color:#555;
+                        }
+                    </p>
+                    <p class="important">Don't get carried away with wild font choices. Some fonts have very poor readability, reducing accessibility.</p>
+                </section>
+            </div>
+
+            <button class="accordion">CSS Measurements</button>
+            <div class="panel">
+                <section>
+                    <h3>
+                        Size Measurements
+                    </h3>
+                    <ul>
+                        <li>px - Pixels is one of the most common measuring types. It is specific to computers, as it renders based on the pixel-display of all monitors. Great for specific measurements on boxes and borders, but for fonts, it can lead to difficulty as some browsers don't allow scaling and font can end up too small</li>
+                        <li>% - Percentage measurements are also very common.</li>
+                        <li>em - A relative measurement of the letter "m" in the chosen font. This is a popular one for spacing around text, as it inherits the font dimensions</li>
+                        <li>rem - Similar to em, this will inherit only the Root value, helpful for avoiding 'compound inheritance' values</li>
+                        <li>pt - Points is an aold system related to type-setting that had a standard size for points. This is a relative size based on the users' system</li>
+                        <li>pc - Picas is a very old system that was frequently related to typewritten documents. Rarely used.</li>
+                        <li>ex - Similar to em, this is a relative measurement of the letter "x". However, it is rarely used, and not fully supported</li>
+                        <li>vh, vw, vmin, vmax - size relative to viewport widths and heights. very useful for scaling, though may not enjoy full support yet</li>
+                        <li>named - This refers to fonts and a few other elements. The named sizes are xx-small, x-small, small, medium, large, x-large, xx-large. They are relative to the browsers base font size</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Color Measurements</h3>
+                    <p>
+                        Colors can be specified in a number of ways, corresponding to the system that your organization or visual element requires. Almost all color systems use a method for expressing a combination of the three color spaces used for displaying colors on computer monitors: Red Green and Blue.
+                    </p>
+                    <ul>
+                        <li>Hex: #003366 - One of the most common systems, it combines 2 digits each for Red Green and Blue. Each hex pair stand stands for digits between 00 and FF in hexadecimal</li>
+                        <li>Compact Hex: #f30 - This is almost identical to the Hex version, except that when three numbers are used, most browsers will just double-up each digit. So, #f30 will become #ff3300</li>
+                        <li>Named: cornflowerblue - Although the official W3C specification only lists 16 named colors, almost every browser supports the various named colors</li>
+                        <li>RGB: rgb(255, 0, 255) - This allows the user to specify the same thing as Hex, but in Decimal format</li>
+                        <li>RGB %: rgb(100%, 0%, 50%) - Almost identical to RGB, but with percentages of each color space instead</li>
+                    </ul>
+                </section>
+            </div>
+
+            <button class="accordion">Compact CSS Code</button>
+            <div class="panel">
+                <section>
+                    <h3>Compact Css Code</h3>
+                    <p>
+                        When building your CSS rules, there are some easy ways to compact your code, reducing code bloat and filesize.
+                    </p>
+                </section>
+                <section>
+                    <h3>Grouping Selectors</h3>
+                    <ul>
+                        <li>If you would like to apply the same style to a multitude of different selectors, you can group them with the comma</li>
+                        <li>h1, h2, h3, h4, h5 { color: red; }</li>
+                        <li>This can be done with Elements, classes and IDs</li>
+                        <li>Specific rules for H3 (for example) can come later</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>
+                        Grouping comes to Classes
+                    </h3>
+                    <ul>
+                        <li>As well as grouping Elements, you can also group classes</li>
+                        <li>Define several classes: .cool{ color:red; } .wicked { border:1px solid black; }</li>
+                        <li>Assign several classes at once: &lt;p class="cool wicked"&gt; will select both the cool and wicked classes</li>
+                        <li>The order of the attribute values is irrelevant</li>
+                        <li>Case is important! Remember to use a single rule for CSS naming and stick with it</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Rule Compacting
+                    </h3>
+                    <p>There are a lot of rules that will accept a compacted ruleset:</p>
+                    <ul>
+                        <li>margin: top right bottom left;</li>
+                        <li>padding: top right bottom left;</li>
+                        <li>border: width style color;</li>
+                        <li>font: font-style font-variant font-weight font-size/line-height font-family;</li>
+                        <li>background: color image position repeat size attachment;</li>
+                    </ul>
+                    <p>
+                        Box model properties support 1, 2, 3 and 4 values. For example:
+                    </p>
+                    <ul>
+                        <li>
+                            <ul>
+                                border-width:10px;
+                                <li>all four borders are 10px</li>
+                            </ul>
+                        </li>
+                        <li>
+                            border-width:10px 20px;
+                            <ul>
+                                <li>top and bottom borders are 10px</li>
+                                <li>left and right borders are 20px</li>
+                            </ul>
+                        </li>
+                        <li>
+                            border-width:10px 20px 30px;
+                            <ul>
+                                <li>top border is 10px</li>
+                                <li>left and right borders are 20px</li>
+                                <li>bottom border is 30px</li>
+                            </ul>
+                        </li>
+                        <li>
+                            border-width:10px 20px 30px 40px;
+                            <ul>
+                                <li>top border is 10px</li>
+                                <li>right border is 20px</li>
+                                <li>bottom border is 30px</li>
+                                <li>left border is 40px</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="important">
+                        Note you do not need to specify values for all fields in a compact rule. Just keep the space delimited list in the correct order. For example, you could specify several font values all at once:
+                        font: italic small-caps bold 1.3em "helvetica", sans-serif; 
+                        or, specify only a select couple.
+                        font: 1.3em "helvetica", sans-serif;
+                    </p>
+                </section>
+            </div>
+
+
+            <button class="accordion">CSS Selectors</button>
+            <div class="panel">
+                <section>
+                    
+                </section>
+            </div>
+
+
+            <button class="accordion">Referencing Stylesheets</button>
+            <div class="panel">
+                <section>
+  
+                </section>
+            </div>
+
+
+            <button class="accordion">Referencing Stylesheets</button>
+            <div class="panel">
+                <section>
+  
+                </section>
+            </div>
+
+
+            <button class="accordion">Referencing Stylesheets</button>
+            <div class="panel">
+                <section>
+  
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer> 
+        <p>
+            &copy;2020 - For Educational Purposes Only
+        </p>
+        <address>
+            Vancouver, BC
+        </address>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/accordion.js"></script>
+
+</body>
+</html>
