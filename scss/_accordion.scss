@@ -5,6 +5,7 @@
     color: $light-text;
     cursor: pointer;
     padding: 1rem 1rem 1rem 2rem;
+    margin-top: 10px;
     width: 100%;
     border: none;
     text-align: left;
@@ -26,10 +27,11 @@
 }
     
 .panel {
-    padding: 0;
+    padding: 15px 0 0 0;
     display: none;
     background-color: lighten($secondary-color-hover,55);
     overflow: hidden;
+    margin-bottom: 10px;
 
     li {
         margin-left: 20px;

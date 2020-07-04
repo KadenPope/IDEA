@@ -71,7 +71,7 @@ body .wrapper {
   background-color: #f2f9fb;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 700px) {
   body .wrapper {
     padding: 0 30px 90px 30px;
   }
@@ -308,6 +308,7 @@ footer {
   color: white;
   cursor: pointer;
   padding: 1rem 1rem 1rem 2rem;
+  margin-top: 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -332,10 +333,11 @@ footer {
 }
 
 .panel {
-  padding: 0;
+  padding: 15px 0 0 0;
   display: none;
   background-color: #ebd4e5;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .panel li {
@@ -704,16 +706,24 @@ footer {
   color: white;
 }
 
-.lesson-template h3, .lesson-template ul, .lesson-template ol, .lesson-template blockquote, .lesson-template p {
+.lesson-template h3, .lesson-template ul, .lesson-template blockquote, .lesson-template p {
   padding: 10px;
 }
 
-.lesson-template ol li {
-  margin-left: 40px;
+.lesson-template ol {
+  padding: 0 10px 10px 10px;
 }
 
-.lesson-template .panel {
-  margin: 0 auto 40px auto;
+.lesson-template .wrapper dl {
+  margin: 15px;
+}
+
+.lesson-template .wrapper dl dt {
+  font-weight: bold;
+}
+
+.lesson-template .wrapper dl dd {
+  margin: 0 0 20px 20px;
 }
 
 .lesson-template .important {
@@ -726,8 +736,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
-  margin: 0 auto 20px auto;
+  margin: 10px;
 }
 
 .lesson-template .important h3 {
@@ -735,13 +744,17 @@ footer {
 }
 
 .lesson-template .important blockquote {
-  margin: 0 10px 10px 10px;
   font-size: .9rem;
   padding: .5rem;
 }
 
 .lesson-template .column-child {
   display: block;
+}
+
+.lesson-template .column-child img {
+  width: 50%;
+  margin: 10px auto;
 }
 
 .lesson-template .column-child figure {
@@ -773,10 +786,6 @@ footer {
           flex-direction: column;
 }
 
-.lesson-template .two-column .filezilla img {
-  width: 60%;
-}
-
 @media only screen and (min-width: 700px) {
   .lesson-template .two-column {
     -webkit-box-orient: horizontal;
@@ -785,9 +794,6 @@ footer {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .lesson-template .two-column .column-child {
     width: 45%;
@@ -797,20 +803,8 @@ footer {
 @media only screen and (min-width: 700px) {
   .lesson-template .single-column {
     width: 100%;
-    margin: 10px auto;
+    margin: 20px auto;
   }
-}
-
-.lesson-two .wrapper dl {
-  margin: 15px;
-}
-
-.lesson-two .wrapper dl dt {
-  font-weight: bold;
-}
-
-.lesson-two .wrapper dl dd {
-  margin: 0 0 20px 20px;
 }
 
 .contact {
@@ -823,7 +817,7 @@ footer {
 }
 
 .contact .wrapper form {
-  padding: 20px 0 50px 0;
+  padding: 20px 0 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,16 +825,24 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+  .contact .wrapper form {
+    width: 650px;
+  }
 }
 
 .contact .wrapper form div {
   padding-bottom: 10px;
 }
 
-.contact .wrapper form input {
+.contact .wrapper form input, .contact .wrapper form textarea {
   width: 100%;
   line-height: 200%;
+  border: 2px solid #2A708C;
 }
 
 .contact .wrapper form .student-types input {
@@ -862,8 +864,12 @@ footer {
   width: 100%;
   height: 50px;
   font-size: 16px;
-  background-color: rgba(89, 33, 64, 0.3);
+  background-color: rgba(42, 112, 140, 0.3);
   border-radius: 10px;
-  border: 2px solid #592140;
+  border: 2px solid #2A708C;
+}
+
+.contact .wrapper form textarea {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

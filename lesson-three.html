@@ -38,26 +38,25 @@
 
     <header> 
         <h1>
-            Lesson 2 - Notes
+            Lesson 3 - Notes
         </h1>
     </header>   
 
     <main class="wrapper">
 
         <div class="lesson-accordion">
-            <button class="accordion">Agenda - UPDATE ME</button>
+            <button class="accordion">Agenda</button>
             <div class="panel">
                 <ol>
-                    <li>Character Sets and Languages</li>
-                    <li>HTML</li>
-                    <li>HTML 4.01</li>
-                    <li>XHTML</li>
-                    <li>HTML5</li>
-                    <li>HTML5 Content Models</li>
-                    <li>HTML5 and Forms</li>
-                    <li>Scalable Vector Graphics (SVG)</li>
-                    <li>Multimedia</li>
-                    <li>HTML5 Today</li>
+                    <li>Referencing Stylesheets</li>
+                    <li>Alternate Stylesheets</li>
+                    <li>Style Types</li>
+                    <li>Importing</li>
+                    <li>Fonts</li>
+                    <li>CSS Measurements</li>
+                    <li>Compact CSS Code</li>
+                    <li>CSS Selectors</li>
+                    <li>Rule Ordes and Specificity</li>
                     <li>To Do</li>
                 </ol>
             </div>
@@ -450,34 +449,241 @@
             <button class="accordion">CSS Selectors</button>
             <div class="panel">
                 <section>
-                    
+                    <p>
+                        There are several advanced CSS selector techniques that provide plenty of options for the application of style. 
+                    </p>
+                    <h3>
+                        Universal Selectors
+                    </h3>
+                    <ul>
+                        <li>This is a fairly widely supported selector: the asterisk *</li>
+                        <li>Use it to specify a global rule</li>
+                        <li>* { color: red; } will make all font color red on your page</li>
+                        <li>The universal selector can be very powerful, as it can command a lot of changes to your styles,</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Pseudo-Classes
+                    </h3>
+                    <p>
+                        A Pseudo-class is a selector that allows you to reference a specific action or attribute of an element. This is most often used when specifying a attributes, such as :visited and :link.
+                    </p>
+                    <p>
+                        There are other uses for pseudo elements, that will allow for greater detail in styling content, such as :first-letter and :first-line. These allow the browser to apply a style based on an unselected, but displayed element.
+                    </p>
+                    <p class="important">
+                        Best part: No span or div required to access these pseudo-elements.
+                    </p>
+                    <h3>
+                        Pseudo-elements
+                    </h3>
+                    <p>
+                        Within a pseudo-elements in particular, it's important to follow a certain order:
+                        <ul>
+                            <li>a:link</li>
+                            <li>a:visited</li>
+                            <li>a:hover</li>
+                            <li>a:active</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Easy mnemonic: LVHA - LoVe - HAte. Because of the way that CSS applies rules, it looks at the LAST rule for a given element and applies more weight to it. For example, if you are hovering over a link, you don't want to see the link state
+                    </p>
+                    <h3>Additional pseudo-classes and pseudo-elements</h3>
+                    <ul>
+                        <li>selector:before, selector:after - add text content before or after the selector's content</li>
+                        <li>selector:first-line, selector:first-letter - style the first line or letter of the selector</li>
+                        <li>selector:first-of-type, selector:last-of-type - style the first or last tag of the selector type</li>
+                        <li>selector:nth-of-type(n) - select the nth() tag of the same type as selector</li>
+                        <li>selector:nth-child(n) - select the nth() child</li>
+                        <li>selector:nth-child(2n) - select every even numbered child</li>
+                        <li>selector:nth-child(2n+1) - select every odd numbered child</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Decsendant Selectors
+                    </h3>
+                    <ul>
+                        <li>Separated by a space, the last element is the one being styled</li>
+                        <li>h1 em will apply rules to all em's within an h1</li>
+                        <li>You can have as many as you want: ul ol ul li</li>
+                        <li>Great for specifying different styles when they apply only in certain areas</li>
+                        <li>#nav a { ... } will only apply these rules to Anchors within the div called nav</li>
+                        <li>Degree of separation can be infinite, so be careful</li>
+                        <li>p em will match ANY em that descends from a paragraph, no matter how nested</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Child Selectors
+                    </h3>
+                    <ul>
+                        <li>Uses the > combinator to specify children</li>
+                        <li>Will select an element that is directly descended from another element</li>
+                        <li>p > strong will only select a strong tag that is inside a paragraph</li>
+                        <li>Will not select a strong tag embedded in any other tag (even if it is within a paragraph)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Adjacent Sibling Selectors
+                    </h3>
+                    <ul>
+                        <li>The + combinator specifies the first sibling tag following the root</li>
+                        <li>It will not include the root for styling</li>
+                        <li>div + h2 will select the first sibling h2 following a div tag</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        General Sibling Selectors
+                    </h3>
+                    <ul>
+                        <li>The ~ combinator specifies all siblings tags following the root</li>
+                        <li>It will not select sibling tags that precede the root, nor will it include the root</li>
+                        <li>h1 ~ h2 will select all sibling h2 tags that follow an h1</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Attribute Selectors
+                    </h3>
+                    <ul>
+                        <li>You can also select elements by what the element contains</li>
+                        <li>The method is: element[attribute=value]</li>
+                        <li>If you specify an attribute with no value, you will match any element that simply has the attribute present (no matter what it's value is)</li>
+                        <li>p[align] {color: red;} will turn red any paragraph that contains an align attribute</li>
+                        <li>Similarly, img[alt] {border: 1pt red solid; } will draw a red line around all images with an alt attribute</li>
+                        <li>You can further direct the attribute selector to find content that is at the beginning (using the carat: ^), somewhere inside (using the asterisk: *) or end of a value (using the dollar sign: $)</li>
+                        <li>Attribute selector examples:
+                            <ul>
+                                <li>img[alt] - select all img tags that have alt attributes</li>
+                                <li>img[src="images/pic.jpg"] - select img tags whose src is 'images/pic.jpg'</li>
+                                <li>img[src^="gallery/"] - select all img tags whose src BEGINS with 'gallery/'</li>
+                                <li>img[src*="logo"] - select all img tags whose src CONTAINS 'logo'</li>
+                                <li>img[src$=".png"] - select all img tags whose src ENDS with '.png'</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </section>
             </div>
 
-
-            <button class="accordion">Referencing Stylesheets</button>
+            <button class="accordion">Rule Order and Specificity</button>
             <div class="panel">
                 <section>
-  
+                    <p>
+                        When a style declaration is found to be in conflict with a previously declared style, there is a method for determining which one will win out. The process is built into every web browser, and almost all of them calculate the values identically (for once!).
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        Here is how the W3C defines the process by which style order is determined:
+                    </h3>
+                    <dl>
+                        <dt>Discover all declarations</dt>
+                        <dd>
+                            Find all declarations that apply to the element and property in question, for the target media type. Declarations apply if the associated selector matches the element in question.
+                        </dd>
+                        <dt>
+                            Sheet Order
+                        </dt>
+                        <dd>
+                            The primary sort of the declarations is by weight and origin: for normal declarations, author style sheets override user style sheets which override the default style sheet.
+                            <ul>
+                                <li>Note: For "!important" declarations, user style sheets override author style sheets which override the default style sheet. "!important" declaration override normal declarations. An imported style sheet has the same origin as the style sheet that imported it.</li>
+                            </ul>
+                        </dd>
+                        <dt>
+                            Specificity
+                        </dt>
+                        <dd>
+                            The secondary sort is by specificity of selector: more specific selectors will override more general ones. Pseudo-elements and pseudo-classes are counted as normal elements and classes, respectively
+                        </dd>
+                        <dt>
+                            Sort by Order: 
+                        </dt>
+                        <dd>
+                            Finally, sort by order specified: if two rules have the same weight, origin and specificity, the latter specified wins. Rules in imported style sheets are considered to be before any rules in the style sheet itself.
+                        </dd>
+                    </dl>
+                </section>
+                <section>
+                    <h3>
+                        Specificity - In Detail
+                    </h3>
+                    <p>
+                        is a method for determining what rules are applied when a conflict between two selectors occurs. Through a method of adding values when certain elements and selectors are present, a specificity number can be applied to any CSS rule. The one with highest specificity wins and the associated rule is applied to the element(s) in question.
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        Ruleset for Specificity
+                    </h3>
+                    <p>
+                        Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.
+                    </p>
+                    <ol>
+                        <li>Count the number of IDs in the selector.</li>
+                        <li>Count the number of CLASS, pseudoclass, and attribute selectors.</li>
+                        <li>Count the number of HTML tag names in the selector</li>
+                    </ol>
+                    <p>
+                        Next, write the three numbers in exact order with no spaces or commas to obtain a three digit number. (Note, you may need to convert the numbers to a larger base to end up with three digits.) The final list of numbers corresponding to selectors will easily determine specificity with the higher numbers winning out over lower numbers. Following is a list of selectors sorted by specificity:
+                    </p>
+                    <dl>
+                        <dt>#id1</dt>
+                        <dd>
+                            /* id=1 class=0 HTML=0 --> specificity = 100 */
+                        </dd>
+                        <dt>
+                            UL UL LI.red
+                        </dt>
+                        <dd>
+                            /* id=0 class=1 HTML=3 --> specificity = 013 */
+                        </dd>
+                        <dt>
+                            LI.red
+                        </dt>
+                        <dd>
+                            /* id=0 class=1 HTML=1 --> specificity = 011 */
+                        </dd>
+                        <dt>
+                            LI 
+                        </dt>
+                        <dd>
+                            /* id=0 class=0 HTML=1 --> specificity = 001 */
+                        </dd>
+                    </dl>
+                </section>
+                <section>
+                    <h3>
+                        !important rule
+                    </h3>
+                    <ul>
+                        <li>This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
+                        <li>It indicates that this rule should take over any previous rules that might govern a specific element.</li>
+                        <li>Example .selector{ color:blue !important; }</li>
+                        <li>This rule can cause havoc if overused, as it will overrule any other declaration with the same selector. Be careful with !important</li>
+                    </ul>
                 </section>
             </div>
 
 
-            <button class="accordion">Referencing Stylesheets</button>
+            <button class="accordion">To Do</button>
             <div class="panel">
                 <section>
-  
+                    <h3>
+                        To Do
+                    </h3>
+                    <ul>
+                        <li>Download, review, and complete the homework assignment from D2L</li>
+                        <li>Find a partner for your homework.</li>
+                        <li>Practice using advanced CSS selectors</li>
+                    </ul>
                 </section>
             </div>
-
-
-            <button class="accordion">Referencing Stylesheets</button>
-            <div class="panel">
-                <section>
-  
-                </section>
-            </div>
-
         </div>
     </main>
 

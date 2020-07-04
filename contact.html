@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> COMP 1950 | Lesson 2 </title>
+    <title> COMP 1950 | Contact Us </title>
     <link rel="stylesheet" href="dist/css/styles.css">
 </head>
 
@@ -43,7 +43,7 @@
     </header>   
 
     <main class="wrapper">
-        <form action="">
+        <form action="submit.html">
             <div>
                 <label for="first-name">First name:</label>
                 <input type="text" id="first-name" name="first-name" required>
@@ -74,11 +74,17 @@
                     <label for="current">Current Student</label>
                 </div>
             </div>
+            <div>
+                <div>
+                  <label for="comments">Comments:</label>
+                </div>
+                <div>
+                  <textarea id="comments" name="comments" style="height:150px"></textarea>
+                </div>
+            </div>
             <div class="submit">
                 <input type="submit" value="Submit">
-                <!-- <input type="submit" value="Submit" class="submit-contact"> -->
             </div>
-            
         </form>
     </main>
 

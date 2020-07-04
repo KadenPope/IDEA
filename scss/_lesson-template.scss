@@ -17,18 +17,24 @@
         color: $light-text
     }
 
-    h3, ul, ol, blockquote, p {
+    h3, ul, blockquote, p {
         padding: 10px;
     }
 
     ol {
-        li {
-            margin-left: 40px;
-        }
+        padding: 0 10px 10px 10px;
     }
 
-    .panel {
-        margin: 0 auto 40px auto;
+    .wrapper {
+        dl {
+            margin: 15px;
+            dt {
+                font-weight: bold;
+            }
+            dd {
+                margin: 0 0 20px 20px;
+            }
+        }
     }
 
     .important {
@@ -40,23 +46,22 @@
         border-left: 5px solid rgba($main-color, 20);
         display: flex;
         flex-direction: column;
-        width: 80%;
-        margin: 0 auto 20px auto;
+        margin: 10px;
 
         blockquote {
-            margin: 0 10px 10px 10px;
             font-size: .9rem;
             padding: .5rem;
         }
     }
 
-    // img {
-    //     width: 90%;
-    //     margin: 5px auto;
-    // }
-
     .column-child {
         display: block;
+        
+        img {
+            width: 50%;
+            margin: 10px auto;
+        };
+
         figure {
             margin: 0;
             position: relative;
@@ -78,17 +83,10 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-
-        .filezilla {
-            img {
-                width: 60%;
-            }
-        }
         
         @media only screen and (min-width: 700px) {
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
             .column-child {
                 width: 45%;
             }
@@ -98,7 +96,7 @@
     .single-column {
         @media only screen and (min-width: 700px) {
             width: 100%;
-            margin: 10px auto;
+            margin: 20px auto;
         }
 
     }
