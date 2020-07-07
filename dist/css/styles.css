@@ -115,7 +115,7 @@ header h3 {
 }
 
 header .hero-image {
-  background-image: url("images/home-banner.jpg");
+  background-image: url("images/home-banner");
   position: relative;
   left: 0px;
   height: 80vh;
@@ -495,6 +495,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
