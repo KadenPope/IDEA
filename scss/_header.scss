@@ -18,10 +18,6 @@ header {
     justify-content: center;
     justify-items: center;
     .hero-image {
-        // background-image: url("images/home-banner2.jpg");
-        // position: relative;
-        // left: 0px;
-        // top: 0px;
         height: 80vh;
         overflow: hidden;
         img {
@@ -29,8 +25,6 @@ header {
             width: 100%;
             height: 100%;
         }
-        // background-size: cover;
-        // background-position: center center;
     }
     .hero-text {
         position: absolute;
