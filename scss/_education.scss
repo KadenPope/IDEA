@@ -1,0 +1,80 @@
+.education {
+    .hero-text {
+        h1 {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin-top: -45px;
+            @media only screen and (min-width: 560px) {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+            @media only screen and (min-width: 830px) {
+                font-size: 2.5rem;
+                line-height: 2.75rem;
+                margin-top: 20px;
+            }
+        }
+    }
+    .wrapper {
+        background-color: $white-background;
+        ul {
+            list-style-type: disc;
+            padding: 15px 5px 15px 18px;
+            font-size: 1rem;
+            @media only screen and (min-width: 600px) {
+                padding: 10px 40px;
+            }
+        }
+        .work-experience {
+            margin: 30px auto;
+        }
+        .formal-education {
+            margin: 0 auto;
+        }
+        .formal-education, .work-experience {
+            max-width: 1000px;
+            color: $dark-text;
+            border: 15px solid $main-color;
+            background-color: $secondary-color-faded;
+            border: 10px solid $main-color;
+            margin-bottom: 80px;
+            
+            h2 {
+                font-size: 1.75rem;
+                background-color: $main-color;
+                color: $light-text;
+                text-align: center;
+                padding: 20px 0;
+            }
+            h3, .program-name, .employer {
+                background-color: $main-color;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                text-align: center;
+                padding: 8px 0;
+            }
+            .program-name, .employer {
+                background-color: $secondary-color;
+            }
+            div {
+                max-width: 850px;
+                margin: 30px auto 0 auto;
+                padding: 0 15px 15px 15px;
+                &:last-child {
+                    margin-bottom: 40px;
+                }
+            }
+            .description {
+                display: block;
+                background-color: $white-background;
+                color: $dark-text;
+                border: 5px solid $secondary-color;
+            }
+            .institution, .job-title {
+                background-color: $main-color;
+                color: $light-text;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

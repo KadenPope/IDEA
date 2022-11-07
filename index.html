@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> COMP 1950 | Home </title>
+    <title> IDEA | Home </title>
     <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo-small.png"/>
 </head>
 
 
@@ -13,81 +14,90 @@
     <nav class="navbar">
         <div>
             <a class="logo" href="index.html">
-                <img src="images/logo.png" alt="BCIT Logo">
+                <img src="images/logo-small.png" alt="IDEA Logo">
             </a>
-            <button id = "menu-button">
+            <button id = "menu-button" class = "menu-button">
                 MENU
             </button>
         </div>
 
         <ul class = "nav-list">
             <li>
-                <a href="about.html">About</a>
+                <a href="whatisidea.html">What is IDEA</a>
             </li>
             <li>
-                <a href="schedule.html">Schedule</a>
+                <a href="howto.html">How To Guides</a>
             </li>
             <li>
-                <a href="lesson.html">Lessons</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
+                <a href="about.html">About Me</a>
             </li>
         </ul>
     </nav>
 
     <header> 
-        <div class="hero-image">
-            <img src="images/home-banner.jpg" alt="banner image">
-        </div>
+
         <div class="hero-text">
-            <h1>Welcome to COMP 1950</h1>  
+            <h1>IDEA</h1> 
+            <p>
+                Inclusivity </br />
+                Diversity </br />
+                Education </br />
+                Accessibility
+            </p>
         </div>
+
+        <div class="hero-image">
+            <img src="images/home-dragonfly.png" alt="Blue dragonfy at the end of a branch">
+            <figcaption>The dragonfly is a symbol of change, transformation and self-realization.</figcaption>
+        </div>
+
     </header>   
 
     <main class="wrapper">
-
-        <div class="descriptions">
-            <section class = 'what-is-1950'>
-                <h2>What is COMP 1950?</h2>
-                <p>
-                    Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques. Participants will gain a deeper understanding of the latest technologies including HTML5 and CSS3 for developing web sites and applications. 
-                </p>
-            </section>
-
-            <section class = 'who-is-1950-for'>
-                <h2>
-                    Who is COMP 1950 for?
-                </h2>
-                <p>
-                    COMP 1950 is for students who already have a basic understanding of HTML/CSS and want to develop their skills as web developers.  This will act as a bridge between HTML/CSS and more advanced programming skills, such as PHP and JavaScript.
-                </p>
-            </section>
-        </div> <!--CLOSE DESCRIPTIONS DIV-->
-        <div class="links">
-            <div>
-                <a href="about.html">About</a>
-            </div>
-            <div>
-                <a href="schedule.html">Schedule</a> 
-            </div>
-            <div>
-                <a href="lesson.html">Lessons</a>
-            </div>
-            <div>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div> <!--CLOSE LINKS DIV-->
+        <section class = "site-links">
+            <a href="whatisidea.html">
+                <div>
+                    <div class="hover-size">
+                        <h2 >
+                            What Is IDEA?
+                        </h2>
+                        <p>
+                            IDEA - Inclusivity, Diversity, Education & Accessibility - exists to make Inclusive Design the norm rather than the exception.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="howto.html">
+                <div class="hover-size">
+                    <h2>
+                        How To Guides
+                    </h2>
+                    <p>
+                        Step by step guides showing how to create websites and documents with the diversity of your users in mind. 
+                    </p>
+                </div>
+            </a>
+            <a href="about.html">
+                <div class="hover-size">
+                    <h2 >
+                        About Kaden
+                    </h2>
+                    <p>
+                        Kaden comes with a diverse background in accessibility and technology.  This is also where you will see their Photography
+                    </p>
+                </div> 
+            </a>
+        </section>
 
     </main>
 
 
     <footer> 
         <p>
-            &copy;2020 - For Educational Purposes Only
+            &copy;2022 - Kaden Pope
         </p>
         <address>
-            Vancouver, BC
+            New Westminster, BC
         </address>
     </footer>
 

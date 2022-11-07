@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACI,WADO,CACP,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CACtB",
-    "sources": [
-        "../../scss/lesson-one.scss"
-    ],
-    "names": [],
-    "file": "lesson-one.css"
-}

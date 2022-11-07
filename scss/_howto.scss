@@ -1,0 +1,144 @@
+.how-to {
+    header {
+        .hero-text {
+            h1 {
+                position: relative;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                padding-left: 0;
+                text-align: left;
+                margin-top: -30px;
+                @media only screen and (min-width: 600px) {
+                    font-size: 2.25rem;
+                    line-height: 3.25rem;
+                }
+                @media only screen and (min-width: 760px) {
+                    font-size: 3.5rem;
+                    line-height: 4rem;
+                }
+            }
+        }
+        
+        @media only screen and (min-width: 800px) {
+            margin-top: 60px;
+        }
+    }
+    .wrapper {
+        background-color: $white-background;
+        padding-bottom: 80px;
+        .guide-types {
+            background-color: $main-color;
+            max-width: 1000px;
+            margin: 20px auto 0px auto;
+            border: 10px solid $main-color;
+
+            h2 {
+                width: 100%;
+                text-align: center;
+                color: $light-text;
+                font-size: 2rem;
+                padding: 0 0 15px 0;
+            }
+            .guides {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $secondary-color-faded;
+        
+                @media only screen and (min-width: 600px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+    
+                div {
+                    margin: 30px auto 30px auto;
+                    width: 300px;
+                    height: 100%;
+                    background-color: $secondary-color;
+                    @media only screen and (min-width: 500px) {
+                        width: 350px;
+                    }
+                    p {
+                        height: 200px;
+                    }
+                    border: 7px solid $secondary-color;
+                }
+                
+                h3 {
+                    color: $dark-text;
+                    text-align: center;
+                    font-size: 1.25rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                    display: block;
+                    background-color: $light-text;
+                }
+                h3, p {
+                    padding: 15px 30px;
+                }
+            }  // Close .guides 
+        }
+        
+
+        .recent-guides {
+            background-color: $main-color;
+            h2 {
+                background-color: $main-color;
+                color: $light-text;
+                padding: 15px 30px;
+                font-size: 1.25rem;
+                text-align: center;
+                @media only screen and (min-width: 760px) {
+                    font-size: 2rem;
+                }
+            }
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: $secondary-color-faded;
+            padding-bottom: 30px;
+            border: 10px solid $main-color;
+
+            .recent-guide {
+                display: flex;
+                flex-direction: column;
+                border: solid 8px $secondary-color;
+                background-color: $white-background;
+                max-width: 800px;
+                margin: 20px auto;
+
+                h3 {
+                    font-size: 1.25rem;
+                    text-align: center;
+                    background-color: $secondary-color;
+                    color: $dark-text;
+                    padding: 40px 20px 30px 20px;
+                    min-width: 17vw;
+                    @media only screen and (min-width: 760px) {
+                        font-size: 1.5rem;
+                    }
+                }
+                p {
+                    padding: 10px;
+                }
+                div {
+                    align-items: center;
+                    margin: auto;
+                }
+                @media only screen and (min-width: 760px) {
+                    flex-direction: row;
+                }
+                img {
+                    max-width: 70vw;
+                    border: 2px solid $main-color-hover;
+                    margin: 40px auto;
+                    @media only screen and (min-width: 760px) {
+                        max-width: 20vw;
+                        margin-right: 20px;
+                    }
+                }
+            } //close .recent-guide
+        } // Close .recent-guides
+    }  // Close Wrapper
+} // Close .how-to

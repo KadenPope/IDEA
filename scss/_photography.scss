@@ -1,0 +1,187 @@
+// ***************************  HEADING/BASE FEATURES CODE ****************************//
+.photos {
+    background-color: $secondary-color;
+    margin: auto;
+}
+.photo-header {
+    margin: 120px auto 0 auto;
+    font-size: 2rem;
+    justify-content: center;
+    background-color: $main-color;
+    width: 90vw;
+
+    h1 {
+        display: block;
+        color: $light-text;
+        background-color: $main-color;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+.photography {
+    margin: 0 auto 80px auto;
+    width: 90vw;
+    margin: 0 0 80px 0;
+    border: 8px solid $main-color;
+    @media only screen and (min-width: 600px) {
+        width: 90vw;
+        margin: auto;
+    }
+    // ***************************  GALLERY CODE ****************************//
+
+    #photos {
+        margin: 0 auto;
+        line-height: 0;
+        background-color: $light-text;
+        border-bottom: none;
+
+        -moz-column-count:    1;
+        -webkit-column-gap:   0px;
+        -webkit-column-count: 1;
+        -moz-column-gap:      0px;
+        column-count:         1;
+        column-gap:           0px;  
+
+        img {
+            padding: 7px;
+            cursor: pointer;
+            margin: 0 auto;
+
+            .img-substrate {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    /*********************************COLUMN RESPONSIVE FORMATTING************************/
+    @media only screen and (min-width: 500px) {
+        #photos {
+            -moz-column-count:    1;
+            -webkit-column-count: 1;
+            column-count:         1;
+        }
+    } 
+    @media only screen and (min-width: 700px) {
+        #photos {
+            -moz-column-count:    2;
+            -webkit-column-count: 2;
+            column-count:         2;
+        }
+    }
+    @media only screen and (min-width: 1000px) {
+        #photos {
+            -webkit-column-count: 3;
+            -moz-column-count:    3;
+            column-count:         3;
+    
+        }
+    }
+    @media only screen and (min-width: 1500px) {
+        #photos {
+            -webkit-column-count: 4;
+            -moz-column-count:    4;
+            column-count:         4;
+    
+        }
+    }
+}
+// ***************************  GALLERY ONCLICK EXPAND IMAGE CODE ****************************//
+
+.photography {
+    position: relative;
+
+    .substrate {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        text-align: center;
+    }
+        
+    .substrate-bg {
+        position: fixed;
+        background-color: rgba(0, 0, 0, .8);
+        left: 0;
+        top: 0;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        cursor: pointer;
+    }
+        
+    .substrate-img {
+        position: fixed;
+        padding-top: 5vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50vh;
+        z-index: 2;
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        max-width: 80%;
+        max-height: 80vh;
+        cursor: pointer;
+    }
+
+    // ***************************  KADEN WHY PHOTOGRAPHY ****************************//
+
+    &__photos {
+        font-size: 1rem;
+        background-color: $secondary-color;
+        color: $light-text;
+    }
+    
+    &__kaden-ideas, &__photos {
+        margin: 1vh auto 0 auto;
+        color: $secondary-color;
+        p {
+            text-align: center;
+            padding: 2vh;
+            color: $light-text;
+        }
+        h2 {
+            text-align: center;
+            padding: 0 0 2vh 0;
+        }
+    }
+
+    &__kaden-ideas {
+
+        -moz-column-count:    1;
+        -webkit-column-gap:   0px;
+        -webkit-column-count: 1;
+        -moz-column-gap:      0px;
+        column-count:         1;
+        column-gap:           0px;
+
+        &--columns {
+            border: solid 7px $light-text;
+            h3 {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                color: white;
+                background-color: $secondary-color;
+                padding: 2vh 0 1vh 0;
+
+                @media only screen and (max-width: 700px) {
+                    padding: 3vh 0;
+                }
+            }
+            
+            ul {
+                padding: 1vh 2vw 1vh 5vw;
+                min-height: 160px;
+                color: $dark-text;
+                background-color: rgba($main-color, .2);
+                li {
+                    list-style-type: circle;
+                    line-height: 160%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.what-is {
+    background-color: $white-background;
+    header {
+        .hero-text {
+            padding-left: 2vw;
+            h1 {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                margin-top: -30px;
+    
+                @media only screen and (min-width: 610px) {
+                    font-size: 2.25rem;
+                }
+                @media only screen and (min-width: 900px) {
+                    font-size: 3rem;
+                    line-height: 4.5rem;
+                    padding-left: 5vw;
+                }
+            }
+        }  
+    }
+    .wrapper {
+        max-width: 1000px;
+        background-color: $secondary-color-faded;
+        border: 10px solid $main-color;
+        padding: 0 0 40px 0;
+        margin: 0 auto 50px auto;
+
+
+        section {
+            div {
+                padding-bottom: 40px;
+            }
+        }
+        .mission, .idea {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h2 {
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            background-color: $main-color;
+            color: $light-text;
+            @media only screen and (min-width: 550px) {
+                font-size: 2.5rem;
+            }
+        }
+        h3 {
+            background-color: $secondary-color;
+            font-size: 1rem;
+            color: $dark-text;
+            @media only screen and (min-width: 550px) {
+                font-size: 1.25rem;
+                span {
+                    margin: 0 0 0 -10px;
+                    padding: 10px 15px;
+                    background-color: $secondary-color;
+                }
+                background-color: $secondary-color-faded;
+            }
+        }
+        p {
+            @media only screen and (min-width: 550px) {
+                font-size: 1rem;
+            }
+            color: $dark-text;
+            border: solid $secondary-color 6px;
+            background-color: $white-background;
+            padding: 20px 20px;
+        }
+        h2, h3{
+            padding: 5px 10px;
+        }
+    }
+}

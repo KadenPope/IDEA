@@ -1,0 +1,284 @@
+.how-to-guide {
+    padding: 50px auto 100px auto;
+
+    header {
+        max-width: 100vw;
+        margin: auto;
+        background-color: $secondary-color-faded;
+        align-items: flex-start;
+        padding-top: 50px;
+
+        .hero-text {
+            margin: 0;
+            padding: 0;
+            position: relative;
+
+            .title-level {
+                display: flex;
+                flex-direction: column;
+                background-color: $main-color;
+                color: $light-text;
+                padding: 25px 10%;
+                justify-content: space-between;
+
+                @media only screen and (min-width: 450px) {
+                    flex-direction: row;
+                }
+                @media only screen and (min-width: 799px) {
+                    padding-bottom: 50px;
+                }
+            }
+            .details {
+                padding: 10px;
+                width: 100vw;
+                display: block;
+                @media only screen and (min-width: 450px) {
+                    padding: 40px;
+                }
+            }
+            .details-text {
+                    max-width: 1000px;
+                    margin: auto;
+            }
+            h1 {
+                font-size: 2.2rem;
+                line-height: 2.45rem;
+                color: $light-text;
+                font-weight: normal;
+            }
+            h2 {
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                margin-top: 15px;
+                border-bottom: 8px solid $secondary-color;
+            }
+            p, ul {
+                font-size: 1rem;
+                line-height: 1.25;
+                padding: 10px;
+            }
+            ul {
+                list-style: square;
+                padding: 5px 10px 5px 20px;
+                margin-bottom: 5px;
+            }
+            .note {
+                max-width: 1000px;
+                margin: auto;
+                font-style: italic;
+                padding: 15px;
+            }
+        }
+    } //close header
+    .wrapper {
+        max-width: 100vw;
+        margin: auto;
+        background-color: $main-color;
+        .jump-to {
+            margin: 20px 0 40px 0;
+            margin: auto;
+            background-color: $secondary-color-faded;
+            border: 10px solid $main-color;
+
+            h2 {
+                text-align: center;
+                background-color: $main-color;
+                // width: 100%;
+                margin:  0;
+            }
+
+            .go-to-section {
+                max-width: 1000px;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: $white-background;
+
+                a {
+                    max-width: 900px;
+                    margin: 10px;
+                    div {
+                        border: 7px solid $main-color;
+                        margin: 20px auto;
+                        width: 210px;
+                        height: 150px;
+                        background-color: $white-background;
+                    }
+                    h3 {
+                        color: $light-text;
+                        background-color: $main-color;
+                        padding: 5px;
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                        text-align: center;
+                    }
+                    p {
+                        background-color: $white-background;
+                        padding: 15px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            h2 {
+                color: $light-text;
+                font-size: 2rem;
+                padding: 20px;
+            }
+        }
+        .step-by-step {
+            padding: 0 0 90px 0;
+            background-color: $secondary-color-faded;
+            margin: auto;
+            border: 10px solid $main-color;
+
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+                background-color: $main-color;
+                color: white;
+                padding: 20px 0px;
+            }
+            .who-impact {
+                max-width: 900px;
+                margin: auto;
+                .impact-icons {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    margin: auto;
+                    figure {
+                        width: 90px;
+                        padding: 10px 0;
+                        img {
+                            min-height: 90px;
+                        }
+                        figcaption {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+                    }
+                } //Close .impact-icons
+                .impact-description {
+                    margin: 10px;
+                    div {
+                        border: 7px solid $secondary-color;
+                        margin: 20px auto;
+                        // box-shadow: 5px 5px 5px 5px $main-color;
+                    }
+                    max-width: 900px;
+                    h3 {
+                        background-color: $secondary-color;
+                        color: $dark-text;
+                        padding: 10px;
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }
+                    p {
+                        padding: 5px 10px;
+                    }
+                    .big-picture-description {
+                        border: 10px solid $main-color;
+                        background-color: $secondary-color-faded;
+                        color: $dark-text;
+                        padding: 20px;
+                        font-size: 1.25rem;
+                        // border: 5px solid $secondary-color;
+                    }
+                }
+            } // Close .who-impact
+            .delve-in {
+                h3 {
+                    border-bottom: 5px solid $secondary-color;
+                    width: 95vw;
+                    max-width: 900px;
+                    margin: auto;
+                    font-size: 1.5rem;
+                    padding: 20px 10px 0 10px;
+                }
+                .all-steps {
+                    max-width: 900px;
+                    margin: 20px auto 40px auto;
+                    padding-top: 20px;
+                    width: 90%;
+                    font-size: 1rem;
+                    .each-step {
+                        border-bottom: 5px solid $main-color;
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 20px 10px;
+                        @media only screen and (min-width: 600px) {
+                            flex-direction: row;
+                        }
+                        h4 {
+                            font-size: 1.25rem;
+                            min-width: 100px;
+                        }
+                        img {
+                            border: 5px solid $secondary-color;
+                            margin: 5px;
+                            height: 100%;
+                            width: 390px;
+                        }
+                        p, img {
+                            @media only screen and (min-width: 600px) {
+                                max-width: 35vw;
+                            }
+                        }
+                    } //Close .each-step
+                } //close .all-steps
+            }   //close .delve-in
+        } //close .step-by-step
+        .examples {
+            .examples-describe {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    border-bottom: 5px solid $main-color;
+                    width: 95vw;
+                    max-width: 900px;
+                    margin: auto;
+                    font-size: 1.5rem;
+                    padding: 20px 10px 5px 10px;
+                    
+                }
+                p {
+                    padding: 20px;
+                    max-width: 550px;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+                figure {
+                    max-width: 350px;
+                    border: 5px solid $secondary-color;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .action {
+            h3 {
+                border-bottom: 5px solid $main-color;
+                width: 95vw;
+                max-width: 900px;
+                margin: auto;
+                font-size: 1.5rem;
+                padding: 20px 0 5px 0;
+                margin-bottom: 5px;
+            }
+            ol {
+                padding: 40px 20px 0 70px;
+                max-width: 1000px;
+                margin: auto;
+            }
+        }
+        margin-bottom: 50px;
+    }
+}

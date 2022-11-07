@@ -1,108 +1,95 @@
 .about {
     header {
-        margin: 100px 0 0 0;
+        .hero-text {
+            h1 {
+                font-size: 1.25rem;
+                line-height: 1.1rem;
+                padding: 0;
+                text-align: left;
+                @media only screen and (min-width: 400px) {
+                    font-size: 2.25rem;
+                    line-height: 3.25rem;
+                }
+                @media only screen and (min-width: 1000px) {
+                    font-size: 3.5rem;
+                    line-height: 3.75rem;
+                    padding-top: 80px;
+                }
+            }
+            img {
+                border-radius: 50%;
+                width: 65px;
+                border: 3px solid $main-color;
+                @media only screen and (min-width: 600px) {
+                    width: 100px;
+                }
+                @media only screen and (min-width: 800px) {
+                    width: 150px;
+                }
+                @media only screen and (min-width: 1000px) {
+                    width: 200px;
+                }
+            }
+        }
+        @media only screen and (min-width: 800px) {
+            margin: 60px 0 0 60px;
+        }
+        @media only screen and (min-width: 1000px) {
+            margin: 60px 0 0 80px;
+        }
     }
     .wrapper {
-        display: flex;
-        flex-direction: column;
-
-        div {
-            width: 80%;
-            margin: 0 auto 20px auto;
-            .box {
-                width: 100%;
-            }
-        }
-
-        .bold-me {
-            font-weight: bold;
-            margin-left: 20px;
-        }
-
-        .intro {
-            border: 1px solid $secondary-color;
-            border-left: 5px solid $secondary-color;
-            margin: 20px auto;
+        background-color: $white-background;
+        .about-me {
+            background-color: $secondary-color-faded;
+            border: 8px solid $main-color;
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            margin: 0 auto 80px auto;
+            max-width: 1100px;
+            min-width: 320px;
+            padding-bottom: 100px;
+
+            .mini-bio {
+                background-color: $main-color;
+                color: $light-text;
+                border: none;
+            }
+
     
-            blockquote {
-                margin: 10px;
-                font-size: .9rem;
-                padding: .5rem;
-            }
-        }
-        h2 {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .learning {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: space-between;
-
-            img {
-                display: block;
-            }
-
             @media only screen and (min-width: 600px) {
                 flex-direction: row;
+                flex-wrap: wrap;
+            }   
+            @media only screen and (min-width: 850px) {
+                width: 90vw;
+            }   
 
-                img {
-                    width: 40%;  
+            div {
+                margin: 30px 20px 10px 20px;
+                @media only screen and (min-width: 450px) {
+                    width: 350px;
                 }
+                width: 300px;
+                height: 200px;
+                padding: 0 0 30px 0;  
             }
-        }
-
-        .box {
-            border-left: 5px solid $secondary-color;
-            li {
-                margin-left: 30px;
-                list-style-type: disc;
+            
+            h2 {
+                background-color: $secondary-color;
+                color: $light-text;
+                text-align: center;
             }
             p {
-                padding-left: 10px;
+                height: 100%;
+                background-color: $light-text;
+                border: 8px solid $secondary-color;
             }
-            p:first-of-type {
-                margin-top: 10px;
-            }
-            p:last-of-type {
-                margin-bottom: 10px;
-            }
-            img {
-                padding: 10px;
-            }
-        }
-
-        .inner-flex {
-            display: flex;
-            flex-direction: column;
-
-            @media only screen and (min-width: 760px) {
-                flex-direction: row;
-                div:first-child {
-                    margin-right: 15px;
-                }
-                div:last-child {
-                    margin-left: 15px;
-                }
-            }
-
-            table, th {
-                border: 3px solid $main-color;
-            }
-
-            th, tr {
-                padding: 10px;
-            }
-
-            table {
-                width: 90%;
-                margin: 7px auto;
+            h2, p {
+                padding: 15px 30px;
             }
         }
     }

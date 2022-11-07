@@ -1,16 +1,18 @@
 footer {
     width: 100%;
-    font-size: .8rem;
+    font-size: .9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     position: fixed;
+    z-index: 100;
     bottom: 0;
-    background-color: $secondary-color;
+    background-color: $main-color-hover;
     color: $light-text;
+    border-top: 4px solid $light-text;
 
-    @media only screen and (min-width: 760px) {
+    @media only screen and (min-width: 400px) {
         flex-direction: row;
     }
 }
