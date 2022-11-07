@@ -10,7 +10,7 @@ footer {
     bottom: 0;
     background-color: $main-color-hover;
     color: $light-text;
-    border-top: 4px solid $light-text;
+    // border-top: 4px solid $light-text;
 
     @media only screen and (min-width: 400px) {
         flex-direction: row;

@@ -95,7 +95,6 @@
                 align-content: center;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                background-color: $white-background;
 
                 a {
                     max-width: 900px;
@@ -133,6 +132,7 @@
             background-color: $secondary-color-faded;
             margin: auto;
             border: 10px solid $main-color;
+            border-bottom: none;
 
             h2 {
                 font-size: 2rem;
@@ -167,6 +167,7 @@
                     div {
                         border: 7px solid $secondary-color;
                         margin: 20px auto;
+                        background-color: $white-background;
                         // box-shadow: 5px 5px 5px 5px $main-color;
                     }
                     max-width: 900px;
@@ -182,7 +183,7 @@
                     }
                     .big-picture-description {
                         border: 10px solid $main-color;
-                        background-color: $secondary-color-faded;
+                        background-color: $white-background;
                         color: $dark-text;
                         padding: 20px;
                         font-size: 1.25rem;
@@ -205,6 +206,7 @@
                     padding-top: 20px;
                     width: 90%;
                     font-size: 1rem;
+                    background-color: $white-background;
                     .each-step {
                         border-bottom: 5px solid $main-color;
                         &:last-child {

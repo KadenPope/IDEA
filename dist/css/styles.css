@@ -130,7 +130,7 @@ header .hero-image {
 
 header .hero-image figcaption {
   text-align: center;
-  background-color: #593f6c;
+  background-color: #221d60;
   color: white;
   font-size: .8rem;
   padding: 10px 20px;
@@ -267,7 +267,7 @@ body .navbar #menu-button {
 }
 
 .nav-list a:hover {
-  background-color: #593f6c;
+  background-color: #2a0545;
   color: white;
 }
 
@@ -310,9 +310,8 @@ footer {
   position: fixed;
   z-index: 100;
   bottom: 0;
-  background-color: #593f6c;
+  background-color: #221d60;
   color: white;
-  border-top: 4px solid white;
 }
 
 @media only screen and (min-width: 400px) {
@@ -351,7 +350,7 @@ footer {
 }
 
 .active:nth-of-type(odd), .accordion:hover:nth-of-type(odd) {
-  background-color: #8d69a8;
+  background-color: #3e35ae;
 }
 
 .panel {
@@ -1103,7 +1102,7 @@ footer {
 
 .how-to .wrapper .recent-guides .recent-guide img {
   max-width: 70vw;
-  border: 2px solid #593f6c;
+  border: 2px solid #221d60;
   margin: 40px auto;
 }
 
@@ -1348,7 +1347,6 @@ footer {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #FFFFFF;
 }
 
 .how-to-guide .wrapper .jump-to .go-to-section a {
@@ -1390,6 +1388,7 @@ footer {
   background-color: #fef5ed;
   margin: auto;
   border: 10px solid #2a0545;
+  border-bottom: none;
 }
 
 .how-to-guide .wrapper .step-by-step h2 {
@@ -1442,6 +1441,7 @@ footer {
 .how-to-guide .wrapper .step-by-step .who-impact .impact-description div {
   border: 7px solid #f2752c;
   margin: 20px auto;
+  background-color: #FFFFFF;
 }
 
 .how-to-guide .wrapper .step-by-step .who-impact .impact-description h3 {
@@ -1458,7 +1458,7 @@ footer {
 
 .how-to-guide .wrapper .step-by-step .who-impact .impact-description .big-picture-description {
   border: 10px solid #2a0545;
-  background-color: #fef5ed;
+  background-color: #FFFFFF;
   color: black;
   padding: 20px;
   font-size: 1.25rem;
@@ -1479,6 +1479,7 @@ footer {
   padding-top: 20px;
   width: 90%;
   font-size: 1rem;
+  background-color: #FFFFFF;
 }
 
 .how-to-guide .wrapper .step-by-step .delve-in .all-steps .each-step {
