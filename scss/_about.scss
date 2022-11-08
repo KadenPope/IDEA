@@ -1,11 +1,12 @@
 .about {
+    background-color: $secondary-color-hover;
     header {
         .hero-text {
+            padding: 0 0 0 120px;
             h1 {
                 font-size: 1.25rem;
                 line-height: 1.1rem;
-                padding: 0;
-                text-align: left;
+                text-align: center;
                 @media only screen and (min-width: 400px) {
                     font-size: 2.25rem;
                     line-height: 3.25rem;
@@ -32,64 +33,87 @@
             }
         }
         @media only screen and (min-width: 800px) {
-            margin: 60px 0 0 60px;
+            margin: 60px 0 0 0;
         }
         @media only screen and (min-width: 1000px) {
-            margin: 60px 0 0 80px;
+            margin: 60px 0 0 0;
         }
     }
     .wrapper {
         background-color: $white-background;
+        max-width: 1000px;
+        margin: auto;
+        .about-me-heading {
+            font-size: 2rem;
+            padding: 25px;
+        }
+        h2 {
+            color: $light-text;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+            background-color: $main-color;
+            padding: 0 0 0 20px;
+        }
         .about-me {
             background-color: $secondary-color-faded;
-            border: 8px solid $main-color;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 100vw;
-            margin: 0 auto 80px auto;
-            max-width: 1100px;
-            min-width: 320px;
-            padding-bottom: 100px;
-
-            .mini-bio {
-                background-color: $main-color;
-                color: $light-text;
-                border: none;
-            }
-
-    
-            @media only screen and (min-width: 600px) {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }   
-            @media only screen and (min-width: 850px) {
-                width: 90vw;
-            }   
-
-            div {
-                margin: 30px 20px 10px 20px;
-                @media only screen and (min-width: 450px) {
-                    width: 350px;
-                }
-                width: 300px;
-                height: 200px;
-                padding: 0 0 30px 0;  
+            padding-bottom: 25px;
+            p {
+                font-size: 1.25;
             }
             
-            h2 {
-                background-color: $secondary-color;
-                color: $light-text;
-                text-align: center;
-            }
-            p {
-                height: 100%;
-                background-color: $light-text;
-                border: 8px solid $secondary-color;
-            }
-            h2, p {
-                padding: 15px 30px;
+            .mini-bio {
+                p {
+                    color: $dark-text;
+                    padding: 40px;
+                }
+                margin-bottom: 30px;
+            }  
+
+            .about-content {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                a {
+                    max-width: 350px;
+                    min-height: 300px;
+                    h2 {
+                        background-color: $main-color;
+                        color: $light-text;
+                        text-align: center;
+                        height: 100%;
+                        min-height: 75px;
+                    }
+                    p {
+                        background-color: $light-text;
+                        border: 8px solid $main-color;
+                        margin-bottom: 30px;
+                        height: 100%;
+                    }
+                }
+
+                @media only screen and (min-width:700px) {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    margin: 30px 10px;
+
+                                    }  
+                @media only screen and (min-width: 700px) {
+                    width: 100%;
+                }  
+                p {
+                    height: 100%;
+                }
+                h2, p {
+                    padding: 15px 30px;
+                }
             }
         }
     }

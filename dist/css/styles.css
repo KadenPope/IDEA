@@ -1,7 +1,11 @@
 /* CSS Document */
 .hover-size:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hover-size:hover h2, .hover-size:hover h3 {
+  font-weight: bold;
 }
 
 /*  Modified on June 21, 2020 from:
@@ -125,7 +129,7 @@ header .hero-text p {
 
 header .hero-image {
   width: 100vw;
-  max-height: 85vh;
+  max-height: 75vh;
 }
 
 header .hero-image figcaption {
@@ -368,7 +372,7 @@ footer {
 .home .wrapper {
   padding-bottom: 80px;
   margin: auto;
-  background-color: #2a0545;
+  background-color: #ed864b;
 }
 
 .home .wrapper .site-links {
@@ -403,12 +407,12 @@ footer {
 .home .wrapper .site-links h2 {
   z-index: 30;
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   font-size: 1.25rem;
-  border: 5px solid #f2752c;
-  background-color: #f2752c;
-  color: black;
+  border: 5px solid #2a0545;
+  background-color: #2a0545;
+  color: white;
   text-align: center;
   margin: 20px auto 0 auto;
   padding: 20px 16px 16px 16px;
@@ -418,7 +422,7 @@ footer {
 .home .wrapper .site-links p {
   z-index: 10;
   background-color: #FFFFFF;
-  border: 6px solid #f2752c;
+  border: 6px solid #2a0545;
   font-size: 1rem;
   color: black;
   width: 90vw;
@@ -429,11 +433,18 @@ footer {
   position: relative;
 }
 
+.about {
+  background-color: #ed864b;
+}
+
+.about header .hero-text {
+  padding: 0 0 0 120px;
+}
+
 .about header .hero-text h1 {
   font-size: 1.25rem;
   line-height: 1.1rem;
-  padding: 0;
-  text-align: left;
+  text-align: center;
 }
 
 @media only screen and (min-width: 400px) {
@@ -477,23 +488,39 @@ footer {
 
 @media only screen and (min-width: 800px) {
   .about header {
-    margin: 60px 0 0 60px;
+    margin: 60px 0 0 0;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .about header {
-    margin: 60px 0 0 80px;
+    margin: 60px 0 0 0;
   }
 }
 
 .about .wrapper {
   background-color: #FFFFFF;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about .wrapper .about-me-heading {
+  font-size: 2rem;
+  padding: 25px;
+}
+
+.about .wrapper h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  background-color: #2a0545;
+  padding: 0 0 0 20px;
 }
 
 .about .wrapper .about-me {
   background-color: #fef5ed;
-  border: 8px solid #2a0545;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,76 +533,24 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
-  margin: 0 auto 80px auto;
-  max-width: 1100px;
-  min-width: 320px;
-  padding-bottom: 100px;
-}
-
-.about .wrapper .about-me .mini-bio {
-  background-color: #2a0545;
-  color: white;
-  border: none;
-}
-
-@media only screen and (min-width: 600px) {
-  .about .wrapper .about-me {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  .about .wrapper .about-me {
-    width: 90vw;
-  }
-}
-
-.about .wrapper .about-me div {
-  margin: 30px 20px 10px 20px;
-  width: 300px;
-  height: 200px;
-  padding: 0 0 30px 0;
-}
-
-@media only screen and (min-width: 450px) {
-  .about .wrapper .about-me div {
-    width: 350px;
-  }
-}
-
-.about .wrapper .about-me h2 {
-  background-color: #f2752c;
-  color: white;
-  text-align: center;
+  padding-bottom: 25px;
 }
 
 .about .wrapper .about-me p {
-  height: 100%;
-  background-color: white;
-  border: 8px solid #f2752c;
+  font-size: 1.25;
 }
 
-.about .wrapper .about-me h2, .about .wrapper .about-me p {
-  padding: 15px 30px;
+.about .wrapper .about-me .mini-bio {
+  margin-bottom: 30px;
 }
 
-.contact {
-  margin-top: 100px;
+.about .wrapper .about-me .mini-bio p {
+  color: black;
+  padding: 40px;
 }
 
-.contact .wrapper {
-  width: 95%;
-  margin: 0 auto;
-}
-
-.contact .wrapper form {
-  padding: 20px 0 70px 0;
+.about .wrapper .about-me .about-content {
+  width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,56 +558,158 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media screen and (min-width: 700px) {
-  .contact .wrapper form {
-    width: 650px;
+.about .wrapper .about-me .about-content a {
+  max-width: 350px;
+  min-height: 300px;
+}
+
+.about .wrapper .about-me .about-content a h2 {
+  background-color: #2a0545;
+  color: white;
+  text-align: center;
+  height: 100%;
+  min-height: 75px;
+}
+
+.about .wrapper .about-me .about-content a p {
+  background-color: white;
+  border: 8px solid #2a0545;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .about .wrapper .about-me .about-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 30px 10px;
   }
 }
 
-.contact .wrapper form div {
-  padding-bottom: 10px;
+@media only screen and (min-width: 700px) {
+  .about .wrapper .about-me .about-content {
+    width: 100%;
+  }
 }
 
-.contact .wrapper form input, .contact .wrapper form textarea {
-  width: 100%;
-  line-height: 200%;
-  border: 2px solid #2a0545;
+.about .wrapper .about-me .about-content p {
+  height: 100%;
 }
 
-.contact .wrapper form .student-types input {
-  width: auto;
-  font-size: 16px;
+.about .wrapper .about-me .about-content h2, .about .wrapper .about-me .about-content p {
+  padding: 15px 30px;
 }
 
-.contact .wrapper form .student-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.contact {
+  background-color: #ed864b;
 }
 
-.contact .wrapper form input[type="submit"] {
-  display: block;
-  width: 100%;
-  height: 50px;
-  font-size: 16px;
-  background-color: rgba(42, 5, 69, 0.3);
-  border-radius: 10px;
-  border: 2px solid #2a0545;
+.contact header .hero-text h1 {
+  font-size: 1.25rem;
+  line-height: 1.1rem;
+  padding: 0;
+  text-align: left;
 }
 
-.contact .wrapper form textarea {
-  width: 100%;
+@media only screen and (min-width: 400px) {
+  .contact header .hero-text h1 {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact header .hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    padding-top: 80px;
+  }
+}
+
+.contact header .hero-text img {
+  border-radius: 50%;
+  width: 65px;
+  border: 3px solid #2a0545;
+}
+
+@media only screen and (min-width: 600px) {
+  .contact header .hero-text img {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contact header .hero-text img {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact header .hero-text img {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contact header {
+    margin: 60px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact header {
+    margin: 60px 0 0 0;
+  }
+}
+
+.contact .wrapper {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #FFFFFF;
+  padding-bottom: 100px;
+}
+
+.contact .wrapper h2 {
+  background-color: #2a0545;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 6rem;
+  text-align: center;
+  margin: auto;
+}
+
+.contact .wrapper div {
+  padding: 20px;
+}
+
+.contact .wrapper div h3 {
+  border-bottom: 5px solid #2a0545;
+  padding: 20px 0 10px 20px;
+  font-size: 1.8rem;
+}
+
+.contact .wrapper div ul {
+  padding: 30px 0 0 50px;
+  font-size: 1.2rem;
+}
+
+.contact .wrapper div ul li {
+  list-style-type: square;
 }
 
 .what-is {
-  background-color: #FFFFFF;
+  background-color: #ed864b;
 }
 
 .what-is header .hero-text {
@@ -640,7 +717,7 @@ footer {
 }
 
 .what-is header .hero-text h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
   margin-top: -30px;
 }
@@ -662,9 +739,8 @@ footer {
 .what-is .wrapper {
   max-width: 1000px;
   background-color: #fef5ed;
-  border: 10px solid #2a0545;
-  padding: 0 0 40px 0;
-  margin: 0 auto 50px auto;
+  padding: 0 0 100px 0;
+  margin: 0 auto 0 auto;
 }
 
 .what-is .wrapper section div {
@@ -678,7 +754,8 @@ footer {
 
 .what-is .wrapper h2 {
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 5.5rem;
   text-align: center;
   background-color: #2a0545;
   color: white;
@@ -691,9 +768,9 @@ footer {
 }
 
 .what-is .wrapper h3 {
-  background-color: #f2752c;
+  background-color: #2a0545;
   font-size: 1rem;
-  color: black;
+  color: white;
 }
 
 @media only screen and (min-width: 550px) {
@@ -704,13 +781,13 @@ footer {
   .what-is .wrapper h3 span {
     margin: 0 0 0 -10px;
     padding: 10px 15px;
-    background-color: #f2752c;
+    background-color: #221d60;
   }
 }
 
 .what-is .wrapper p {
   color: black;
-  border: solid #f2752c 6px;
+  border: solid #221d60 6px;
   background-color: #FFFFFF;
   padding: 20px 20px;
 }
@@ -726,34 +803,37 @@ footer {
 }
 
 .photos {
-  background-color: #f2752c;
+  background-color: #ed864b;
   margin: auto;
 }
 
 .photo-header {
-  margin: 120px auto 0 auto;
-  font-size: 2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #2a0545;
-  width: 90vw;
+  margin: 60px auto 0 auto;
 }
 
 .photo-header h1 {
   display: block;
   color: white;
   background-color: #2a0545;
-  text-align: center;
+  margin: auto;
   padding: 20px 0;
+  font-size: 2rem;
 }
 
 .photography {
-  margin: 0 auto 80px auto;
+  margin: auto;
+  padding: 0 0 160px 0;
   width: 90vw;
-  margin: 0 0 80px 0;
-  border: 8px solid #2a0545;
   /*********************************COLUMN RESPONSIVE FORMATTING************************/
+}
+
+.photography h2 {
+  display: block;
+  color: black;
+  background-color: #ed864b;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -917,6 +997,10 @@ footer {
   line-height: 160%;
 }
 
+.how-to {
+  background-color: #ed864b;
+}
+
 .how-to header .hero-text h1 {
   position: relative;
   font-size: 1.25rem;
@@ -946,16 +1030,10 @@ footer {
   }
 }
 
-.how-to .wrapper {
-  background-color: #FFFFFF;
-  padding-bottom: 80px;
-}
-
 .how-to .wrapper .guide-types {
   background-color: #2a0545;
   max-width: 1000px;
-  margin: 20px auto 0px auto;
-  border: 10px solid #2a0545;
+  margin: 0px auto 0px auto;
 }
 
 .how-to .wrapper .guide-types h2 {
@@ -963,7 +1041,7 @@ footer {
   text-align: center;
   color: white;
   font-size: 2rem;
-  padding: 0 0 15px 0;
+  line-height: 5.5rem;
 }
 
 .how-to .wrapper .guide-types .guides {
@@ -998,8 +1076,8 @@ footer {
   margin: 30px auto 30px auto;
   width: 300px;
   height: 100%;
-  background-color: #f2752c;
-  border: 7px solid #f2752c;
+  background-color: #2a0545;
+  border: 7px solid #2a0545;
 }
 
 @media only screen and (min-width: 500px) {
@@ -1013,7 +1091,7 @@ footer {
 }
 
 .how-to .wrapper .guide-types .guides h3 {
-  color: black;
+  color: white;
   text-align: center;
   font-size: 1.25rem;
 }
@@ -1031,10 +1109,9 @@ footer {
 .how-to .wrapper .recent-guides {
   background-color: #2a0545;
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 0 auto;
   background-color: #fef5ed;
   padding-bottom: 30px;
-  border: 10px solid #2a0545;
 }
 
 .how-to .wrapper .recent-guides h2 {
@@ -1059,17 +1136,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: solid 8px #f2752c;
+  border: solid 8px #2a0545;
   background-color: #FFFFFF;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 20px auto 20px auto;
 }
 
 .how-to .wrapper .recent-guides .recent-guide h3 {
   font-size: 1.25rem;
   text-align: center;
-  background-color: #f2752c;
-  color: black;
+  background-color: #2a0545;
+  color: white;
   padding: 40px 20px 30px 20px;
   min-width: 17vw;
 }
@@ -1135,12 +1212,12 @@ footer {
 }
 
 .education .wrapper {
-  background-color: #FFFFFF;
+  background-color: #ed864b;
 }
 
 .education .wrapper ul {
   list-style-type: disc;
-  padding: 15px 5px 15px 18px;
+  padding: 20px 5px 20px 18px;
   font-size: 1rem;
 }
 
@@ -1161,10 +1238,8 @@ footer {
 .education .wrapper .formal-education, .education .wrapper .work-experience {
   max-width: 1000px;
   color: black;
-  border: 15px solid #2a0545;
   background-color: #fef5ed;
-  border: 10px solid #2a0545;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .education .wrapper .formal-education h2, .education .wrapper .work-experience h2 {
@@ -1176,11 +1251,11 @@ footer {
 }
 
 .education .wrapper .formal-education h3, .education .wrapper .formal-education .program-name, .education .wrapper .formal-education .employer, .education .wrapper .work-experience h3, .education .wrapper .work-experience .program-name, .education .wrapper .work-experience .employer {
-  background-color: #2a0545;
+  background-color: #221d60;
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-align: center;
-  padding: 8px 0;
+  padding: 15px 0;
 }
 
 .education .wrapper .formal-education .program-name, .education .wrapper .formal-education .employer, .education .wrapper .work-experience .program-name, .education .wrapper .work-experience .employer {
@@ -1201,7 +1276,7 @@ footer {
   display: block;
   background-color: #FFFFFF;
   color: black;
-  border: 5px solid #f2752c;
+  border: 5px solid #221d60;
 }
 
 .education .wrapper .formal-education .institution, .education .wrapper .formal-education .job-title, .education .wrapper .work-experience .institution, .education .wrapper .work-experience .job-title {
@@ -1262,7 +1337,7 @@ footer {
 }
 
 .how-to-guide header .hero-text .details {
-  padding: 10px;
+  padding: 20px;
   width: 100vw;
   display: block;
 }
@@ -1279,7 +1354,7 @@ footer {
 }
 
 .how-to-guide header .hero-text h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   line-height: 2.45rem;
   color: white;
   font-weight: normal;
@@ -1355,7 +1430,7 @@ footer {
 }
 
 .how-to-guide .wrapper .jump-to .go-to-section a div {
-  border: 7px solid #2a0545;
+  border: 7px solid #221d60;
   margin: 20px auto;
   width: 210px;
   height: 150px;
@@ -1364,7 +1439,7 @@ footer {
 
 .how-to-guide .wrapper .jump-to .go-to-section a h3 {
   color: white;
-  background-color: #2a0545;
+  background-color: #221d60;
   padding: 5px;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -1400,11 +1475,12 @@ footer {
 }
 
 .how-to-guide .wrapper .step-by-step .who-impact {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
-.how-to-guide .wrapper .step-by-step .who-impact .impact-icons {
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description {
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1412,56 +1488,94 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: auto;
 }
 
-.how-to-guide .wrapper .step-by-step .who-impact .impact-icons figure {
-  width: 90px;
-  padding: 10px 0;
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px auto;
+  width: 100%;
 }
 
-.how-to-guide .wrapper .step-by-step .who-impact .impact-icons figure img {
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fef5ed;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 7px solid #f2752c;
+  background-color: #FFFFFF;
+}
+
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div figure {
+  padding: 20px;
+}
+
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div figure img {
   min-height: 90px;
+  min-width: 90px;
 }
 
-.how-to-guide .wrapper .step-by-step .who-impact .impact-icons figure figcaption {
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div figure figcaption {
   font-size: 1rem;
   text-align: center;
 }
 
-.how-to-guide .wrapper .step-by-step .who-impact .impact-description {
-  margin: 10px;
-  max-width: 900px;
-}
-
-.how-to-guide .wrapper .step-by-step .who-impact .impact-description div {
-  border: 7px solid #f2752c;
-  margin: 20px auto;
-  background-color: #FFFFFF;
-}
-
-.how-to-guide .wrapper .step-by-step .who-impact .impact-description h3 {
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div h3 {
+  padding: 20px;
   background-color: #f2752c;
   color: black;
-  padding: 10px;
   font-size: 1.3rem;
   font-weight: bold;
+  min-width: 150px;
+  width: 50%;
+  height: 100%;
 }
 
-.how-to-guide .wrapper .step-by-step .who-impact .impact-description p {
-  padding: 5px 10px;
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div p {
+  padding: 20px;
 }
 
-.how-to-guide .wrapper .step-by-step .who-impact .impact-description .big-picture-description {
+@media only screen and (max-width: 700px) {
+  .how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .how-to-guide .wrapper .step-by-step .who-impact .impact-description div div div h3 {
+    width: 100%;
+  }
+}
+
+.how-to-guide .wrapper .step-by-step .who-impact .impact-description div div .big-picture-description {
   border: 10px solid #2a0545;
   background-color: #FFFFFF;
   color: black;
-  padding: 20px;
   font-size: 1.25rem;
+  padding: 20px;
 }
 
 .how-to-guide .wrapper .step-by-step .delve-in h3 {
@@ -1480,6 +1594,7 @@ footer {
   width: 90%;
   font-size: 1rem;
   background-color: #FFFFFF;
+  border: 5px solid #2a0545;
 }
 
 .how-to-guide .wrapper .step-by-step .delve-in .all-steps .each-step {
@@ -1538,6 +1653,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #FFFFFF;
 }
 
 .how-to-guide .wrapper .examples .examples-describe h3 {
@@ -1562,6 +1680,18 @@ footer {
   margin-bottom: 10px;
 }
 
+.how-to-guide .wrapper .examples .examples-describe figure figcaption {
+  padding: 10px;
+}
+
+.how-to-guide .wrapper .action {
+  max-width: 1000px;
+  background-color: #FFFFFF;
+  margin: 20px auto;
+  padding-bottom: 50px;
+  border: 5px solid #2a0545;
+}
+
 .how-to-guide .wrapper .action h3 {
   border-bottom: 5px solid #2a0545;
   width: 95vw;
@@ -1574,7 +1704,5 @@ footer {
 
 .how-to-guide .wrapper .action ol {
   padding: 40px 20px 0 70px;
-  max-width: 1000px;
-  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,10 @@
 .what-is {
-    background-color: $white-background;
+    background-color: $secondary-color-hover;
     header {
         .hero-text {
             padding-left: 2vw;
             h1 {
-                font-size: 1.5rem;
+                font-size: 1rem;
                 line-height: 2rem;
                 margin-top: -30px;
     
@@ -22,9 +22,9 @@
     .wrapper {
         max-width: 1000px;
         background-color: $secondary-color-faded;
-        border: 10px solid $main-color;
-        padding: 0 0 40px 0;
-        margin: 0 auto 50px auto;
+        // border: 10px solid $main-color;
+        padding: 0 0 100px 0;
+        margin: 0 auto 0 auto;
 
 
         section {
@@ -38,7 +38,8 @@
         }
         h2 {
             width: 100%;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            line-height: 5.5rem;
             text-align: center;
             background-color: $main-color;
             color: $light-text;
@@ -47,15 +48,15 @@
             }
         }
         h3 {
-            background-color: $secondary-color;
+            background-color: $main-color;
             font-size: 1rem;
-            color: $dark-text;
+            color: $light-text;
             @media only screen and (min-width: 550px) {
                 font-size: 1.25rem;
                 span {
                     margin: 0 0 0 -10px;
                     padding: 10px 15px;
-                    background-color: $secondary-color;
+                    background-color: $main-color-hover;
                 }
                 background-color: $secondary-color-faded;
             }
@@ -65,7 +66,7 @@
                 font-size: 1rem;
             }
             color: $dark-text;
-            border: solid $secondary-color 6px;
+            border: solid $main-color-hover 6px;
             background-color: $white-background;
             padding: 20px 20px;
         }

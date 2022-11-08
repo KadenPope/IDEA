@@ -16,10 +16,10 @@
         }
     }
     .wrapper {
-        background-color: $white-background;
+        background-color: $secondary-color-hover;
         ul {
             list-style-type: disc;
-            padding: 15px 5px 15px 18px;
+            padding: 20px 5px 20px 18px;
             font-size: 1rem;
             @media only screen and (min-width: 600px) {
                 padding: 10px 40px;
@@ -34,10 +34,8 @@
         .formal-education, .work-experience {
             max-width: 1000px;
             color: $dark-text;
-            border: 15px solid $main-color;
             background-color: $secondary-color-faded;
-            border: 10px solid $main-color;
-            margin-bottom: 80px;
+            padding-bottom: 80px;
             
             h2 {
                 font-size: 1.75rem;
@@ -47,11 +45,11 @@
                 padding: 20px 0;
             }
             h3, .program-name, .employer {
-                background-color: $main-color;
+                background-color: $main-color-hover;
                 font-size: 1.25rem;
                 line-height: 1.5rem;
                 text-align: center;
-                padding: 8px 0;
+                padding: 15px 0;
             }
             .program-name, .employer {
                 background-color: $secondary-color;
@@ -68,7 +66,7 @@
                 display: block;
                 background-color: $white-background;
                 color: $dark-text;
-                border: 5px solid $secondary-color;
+                border: 5px solid $main-color-hover;
             }
             .institution, .job-title {
                 background-color: $main-color;
