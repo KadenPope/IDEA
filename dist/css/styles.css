@@ -8,6 +8,15 @@
   font-weight: bold;
 }
 
+.hover-size-small:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.hover-size-small:hover h2, .hover-size-small:hover h3 {
+  font-weight: bold;
+}
+
 /*  Modified on June 21, 2020 from:
     http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
@@ -831,9 +840,10 @@ footer {
 .photography h2 {
   display: block;
   color: black;
-  background-color: #ed864b;
+  background-color: #FFFFFF;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1704,5 +1714,99 @@ footer {
 
 .how-to-guide .wrapper .action ol {
   padding: 40px 20px 0 70px;
+}
+
+.what-is {
+  background-color: #ed864b;
+}
+
+.what-is header .hero-text {
+  padding-left: 2vw;
+}
+
+.what-is header .hero-text h1 {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-top: -30px;
+}
+
+@media only screen and (min-width: 610px) {
+  .what-is header .hero-text h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .what-is header .hero-text h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    padding-left: 5vw;
+  }
+}
+
+.what-is .wrapper {
+  max-width: 1000px;
+  background-color: #fef5ed;
+  padding: 0 0 100px 0;
+  margin: 0 auto 0 auto;
+}
+
+.what-is .wrapper section div {
+  padding-bottom: 40px;
+}
+
+.what-is .wrapper .come-from, .what-is .wrapper .idea {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.what-is .wrapper h2 {
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 5.5rem;
+  text-align: center;
+  background-color: #2a0545;
+  color: white;
+}
+
+@media only screen and (min-width: 550px) {
+  .what-is .wrapper h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.what-is .wrapper h3 {
+  background-color: #2a0545;
+  font-size: 1rem;
+  color: white;
+}
+
+@media only screen and (min-width: 550px) {
+  .what-is .wrapper h3 {
+    font-size: 1.25rem;
+    background-color: #fef5ed;
+  }
+  .what-is .wrapper h3 span {
+    margin: 0 0 0 -10px;
+    padding: 10px 15px;
+    background-color: #221d60;
+  }
+}
+
+.what-is .wrapper p {
+  color: black;
+  border: solid #221d60 6px;
+  background-color: #FFFFFF;
+  padding: 20px 20px;
+}
+
+@media only screen and (min-width: 550px) {
+  .what-is .wrapper p {
+    font-size: 1rem;
+  }
+}
+
+.what-is .wrapper h2, .what-is .wrapper h3 {
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=styles.css.map */
